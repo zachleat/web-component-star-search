@@ -73,6 +73,11 @@ layout: layouts/base.njk
 		<dt>Last published</dt>
 		<dd><time datetime="{{ release.date }}">{{ release.date | date }}</time></dd>
 		{% endif %}
+		{% set changed = componentDates[package + "#" + tagName] if (package and library) %}
+		{% if changed %}
+		<dt>Component last changed</dt>
+		<dd><time datetime="{{ changed.date }}">{{ changed.date | date }}</time> <small class="muted">(in <code>{{ changed.version }}</code>)</small></dd>
+		{% endif %}
 		{% if license %}
 		<dt>License</dt>
 		<dd><span data-pagefind-filter="license">{{ license }}</span>{% if commercial %} <span class="pill pill-commercial">Pro</span>{% endif %}</dd>

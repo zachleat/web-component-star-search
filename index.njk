@@ -88,8 +88,18 @@ layout: layouts/base.njk
 <ul class="component-list" id="components">
 	{%- for entry in collections.components %}
 	{#- Retired components (archived, deprecated or superseded) get no popularity, on the card or in sorting. #}
+	{#- Library components use when that component last changed, falling back to the package’s latest stable release. #}
+	{%- set changed = false %}
+	{%- set changedDate = false %}
+	{%- if entry.data.package %}
+		{%- set changedDate = published[entry.data.package].date %}
+		{%- if entry.data.library and componentDates[entry.data.package + "#" + entry.data.tagName] %}
+			{%- set changed = componentDates[entry.data.package + "#" + entry.data.tagName] %}
+			{%- set changedDate = changed.date %}
+		{%- endif %}
+	{%- endif %}
 	{%- set stats = false if (entry.data.archived or entry.data.deprecated or entry.data.supersededBy) else ((downloads[entry.data.package] if entry.data.package) | popularity(entry.data.stars)) %}
-	<li data-url="{{ entry.url }}" data-category="{{ entry.data.category }}" data-source="{{ entry.data.source }}" data-built-with="{{ entry.data.builtWith }}"{% if entry.data.jsSize %} data-size="{{ entry.data.jsSize + (entry.data.cssSize or 0) }}"{% endif %}{% if stats %} data-popular="{{ stats.value }}"{% endif %}{% if published[entry.data.package].date %} data-published="{{ published[entry.data.package].date }}"{% endif %}{% if entry.data.demo %} data-demo{% endif %}{% if entry.data.package %} data-npm{% endif %}{% if not (entry.data.author in organizations) %} data-indie{% endif %}>
+	<li data-url="{{ entry.url }}" data-category="{{ entry.data.category }}" data-source="{{ entry.data.source }}" data-built-with="{{ entry.data.builtWith }}"{% if entry.data.jsSize %} data-size="{{ entry.data.jsSize + (entry.data.cssSize or 0) }}"{% endif %}{% if stats %} data-popular="{{ stats.value }}"{% endif %}{% if changedDate %} data-published="{{ changedDate }}"{% endif %}{% if entry.data.demo %} data-demo{% endif %}{% if entry.data.package %} data-npm{% endif %}{% if not (entry.data.author in organizations) %} data-indie{% endif %}>
 		{%- set retired = entry.data.deprecated or entry.data.archived %}
 		<a href="{{ entry.url }}">{% if retired %}<del>{% endif %}<code>&lt;{{ entry.data.tagName }}&gt;</code>{% if retired %}</del>{% endif %}</a>
 		{%- set release = published[entry.data.package] if entry.data.package %}
@@ -115,6 +125,9 @@ layout: layouts/base.njk
 		</dl>
 		{%- endif %}
 		<div class="card-footer">
+			{%- if changedDate %}
+			<time class="pill pill-age" datetime="{{ changedDate }}" title="{% if changed %}Component last changed{% else %}Last published{% endif %} {{ changedDate | date }}"><i class="fa-solid fa-clock-rotate-left"></i> {{ changedDate | age }}</time>
+			{%- endif %}
 			{%- set base = baseLibraries[entry.data.builtWith] %}
 			{%- if base and entry.data.builtWith != "Vanilla" %}
 			<span class="card-built-with">{% if base.logo %}<img src="{{ base.logo }}" alt="" class="logo" width="16" height="16">{% endif %}{{ base.label or entry.data.builtWith }}</span>

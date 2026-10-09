@@ -130,6 +130,21 @@ export default function (eleventyConfig) {
 
 	eleventyConfig.addFilter("date", (value) => new Date(value).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric", timeZone: "UTC" }));
 
+	// Shorthand age as of the build, e.g. "3d", "5mo", "2y".
+	eleventyConfig.addFilter("age", (value) => {
+		let days = Math.floor((Date.now() - new Date(value)) / 86400000);
+		if (days < 1) {
+			return "today";
+		}
+		if (days < 30) {
+			return `${days}d`;
+		}
+		if (days < 365) {
+			return `${Math.floor(days / 30)}mo`;
+		}
+		return `${Math.floor(days / 365)}y`;
+	});
+
 	eleventyConfig.addFilter("number", (value) => new Intl.NumberFormat("en-US").format(value));
 
 	eleventyConfig.addFilter("npmUrl", (name) => `https://www.npmjs.com/package/${name}`);

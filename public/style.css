@@ -194,3 +194,6 @@ body > .demo-nav { margin-inline: -1rem; }
 body > .demo-nav .demo-nav-site { display: inline-flex; align-items: center; gap: .375em; text-decoration: none; }
 body > .demo-nav .demo-nav-site-icons { display: inline-flex; align-items: center; gap: .25em; color: #2f7ce8; }
 body > .demo-nav .demo-nav-site-icons svg { display: inline-block; width: auto; height: 1em; fill: currentColor; overflow: visible; }
+.component-list .pill-age { display: inline-flex; align-items: center; gap: .3em; font-weight: 400; color: var(--muted); border-color: var(--border); }
+/* Same height for the search box, dropdowns and Reset button. */
+.search-form input, .search-form select, .search-reset { box-sizing: border-box; block-size: calc(2.5em + 2px); line-height: 1.5; }
