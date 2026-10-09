@@ -193,3 +193,5 @@ component-of-the-week li { border: 2px solid var(--accent); }
 .component-list a.pill-github:hover { color: var(--bg); background: var(--text); border-color: var(--text); }
 .site-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
 .site-footer p { margin: 0; }
+/* Bleed the demo nav to the viewport edges past the body’s side padding. */
+body > .demo-nav { margin-inline: -1rem; }
