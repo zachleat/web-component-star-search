@@ -1,0 +1,138 @@
+---
+layout: layouts/base.njk
+---
+<h1>Find a custom element</h1>
+<p class="lede">A searchable catalog of standalone web components.</p>
+
+{% set categoryCounts = collections.components | countBy("category") %}
+{% set sourceCounts = collections.components | countBy("source") %}
+{% set builtWithCounts = collections.components | countBy("builtWith") %}
+<div class="home-intro">
+
+<div class="home-filters">
+<nav class="source-list" aria-labelledby="sources-heading">
+	<h2 id="sources-heading">Sources</h2>
+	{%- set sources = collections.components | sources %}
+	{%- set fewer = sources | selectattr("count", "le", 2) | length %}
+	<ul>
+		{%- for source in sources %}{% if source.count > 2 %}
+		<li><a href="/?source={{ source.name | urlencode }}" class="source-pill" data-filter>{% if source.url %}{{ source.url | avatar | safe }}{% endif %}{{ source.name }} <span class="count">{{ source.count }}</span></a></li>
+		{%- endif %}{% endfor %}
+	</ul>
+	{%- if fewer %}
+	<p class="source-more">+ {{ fewer }} more sources with one or two components</p>
+	{%- endif %}
+</nav>
+<nav class="source-list category-list" aria-labelledby="categories-heading">
+	<h2 id="categories-heading">Categories</h2>
+	<ul>
+		{%- for category in categories %}{% if categoryCounts[category.name] %}
+		<li><a href="/?category={{ category.name | urlencode }}" class="source-pill" data-filter>{{ category.name }} <span class="count">{{ categoryCounts[category.name] }}</span></a></li>
+		{%- endif %}{% endfor %}
+	</ul>
+</nav>
+<nav class="source-list" aria-labelledby="built-with-heading">
+	<h2 id="built-with-heading">Built with</h2>
+	<ul>
+		{%- for name, count in builtWithCounts | dictsort %}
+		{%- set base = baseLibraries[name] %}
+		<li><a href="/?builtWith={{ name | urlencode }}" class="source-pill" data-filter>{% if base.logo %}<img src="{{ base.logo }}" alt="" class="logo" width="16" height="16">{% endif %}{{ base.label or name }} <span class="count">{{ count }}</span></a></li>
+		{%- endfor %}
+	</ul>
+</nav>
+</div>
+<component-of-the-week items="#components > li" hidden>
+	<h2>Component of the week</h2>
+</component-of-the-week>
+</div>
+
+<component-search items="#components > li">
+	<form class="search-form" id="search-form" hidden>
+		<label class="search-query">
+			<span>Search</span>
+			<input type="search" name="q" autocomplete="off" placeholder="tabs, date picker, video…">
+		</label>
+		<input type="hidden" name="category">
+		<label>
+			<span>Source</span>
+			<select name="source">
+				<option value="">All sources</option>
+				{%- for source, count in sourceCounts | dictsort %}{% if count > 1 %}
+				<option value="{{ source }}">{{ source }} ({{ count }})</option>
+				{%- endif %}{% endfor %}
+			</select>
+		</label>
+		<input type="hidden" name="builtWith">
+		<button type="reset" class="search-reset"><i class="fa-solid fa-xmark"></i> Reset</button>
+	</form>
+	<div class="search-meta">
+		<p class="search-status" role="status" data-status>{{ collections.components.length }} components</p>
+		<div class="search-options" hidden>
+		<label class="search-check"><input type="checkbox" name="demo" value="1" form="search-form"> With demo</label>
+		<label class="search-check"><input type="checkbox" name="npm" value="1" form="search-form"> On npm</label>
+		<label class="search-check"><input type="checkbox" name="indie" value="1" form="search-form"> Indie</label>
+		<label class="search-sort">
+			<span>Sort</span>
+			<select name="sort" form="search-form">
+				<option value="">Most popular</option>
+				<option value="name">Name</option>
+				<option value="size-asc">Size (smallest first)</option>
+				<option value="size-desc">Size (largest first)</option>
+				<option value="published">Newest publish</option>
+			</select>
+		</label>
+		</div>
+	</div>
+</component-search>
+
+<ul class="component-list" id="components">
+	{%- for entry in collections.components %}
+	{#- Retired components (archived, deprecated or superseded) get no popularity, on the card or in sorting. #}
+	{%- set stats = false if (entry.data.archived or entry.data.deprecated or entry.data.supersededBy) else ((downloads[entry.data.package] if entry.data.package) | popularity(entry.data.stars)) %}
+	<li data-url="{{ entry.url }}" data-category="{{ entry.data.category }}" data-source="{{ entry.data.source }}" data-built-with="{{ entry.data.builtWith }}"{% if entry.data.jsSize %} data-size="{{ entry.data.jsSize + (entry.data.cssSize or 0) }}"{% endif %}{% if stats %} data-popular="{{ stats.value }}"{% endif %}{% if published[entry.data.package].date %} data-published="{{ published[entry.data.package].date }}"{% endif %}{% if entry.data.demo %} data-demo{% endif %}{% if entry.data.package %} data-npm{% endif %}{% if not (entry.data.author in organizations) %} data-indie{% endif %}>
+		{%- set retired = entry.data.deprecated or entry.data.archived %}
+		<a href="{{ entry.url }}">{% if retired %}<del>{% endif %}<code>&lt;{{ entry.data.tagName }}&gt;</code>{% if retired %}</del>{% endif %}</a>
+		{%- set release = published[entry.data.package] if entry.data.package %}
+		{%- if retired %} <small class="status-label retired" title="{{ entry.data.deprecated or 'The source repository is archived' }}">{% if entry.data.deprecated %}Deprecated{% else %}Archived{% endif %}</small>
+		{%- elif release.latest and not release.version %} <small class="status-label" title="No stable release yet (latest is {{ release.latest }})">Prerelease</small>{% endif %}
+		<span class="source"><a href="/?source={{ entry.data.source | urlencode }}" data-filter>{{ (entry.data.library.url or entry.data.authorUrl) | avatar | safe }}{{ entry.data.source }}</a> · <a href="/?category={{ entry.data.category | urlencode }}" data-filter>{{ entry.data.category }}</a></span>
+		<p>{{ entry.data.description }}</p>
+		{%- set successor = collections.components | findByTag(entry.data.supersededBy) if entry.data.supersededBy %}
+		{%- if successor %}
+		<a href="{{ successor.url }}" class="card-superseded"><i class="fa-solid fa-circle-arrow-right"></i> Superseded by <code>&lt;{{ successor.data.tagName }}&gt;</code></a>
+		{%- endif %}
+		{%- set popularity = stats %}
+		{%- if popularity and popularity.score < 1 %}{% set popularity = false %}{% endif %}
+		{%- if entry.data.jsSize or popularity %}
+		{%- set librarySize = librarySizes[entry.data.library.name] %}
+		<dl class="card-sizes">
+			<div title="Minified + gzipped"{% if not entry.data.jsSize %} class="is-empty"{% endif %}><dt>JS</dt><dd>{% if entry.data.jsSize %}{{ entry.data.jsSize | bytes }}{% else %}<span title="Unknown">∅</span>{% endif %}</dd></div>
+			<div title="Minified + gzipped"{% if not entry.data.cssSize %} class="is-empty"{% endif %}><dt>CSS</dt><dd>{% if entry.data.cssSize %}{{ entry.data.cssSize | bytes }}{% else %}<span title="None">∅</span>{% endif %}</dd></div>
+			<div{% if librarySize %} title="Shared by every {{ entry.data.library.name }} component, loaded once per page"{% else %} class="is-empty"{% endif %}><dt>Library</dt><dd>{% if librarySize %}{{ librarySize.jsSize | bytes }}{% else %}<span title="None">∅</span>{% endif %}</dd></div>
+			{%- if popularity %}
+			<div title="{% if popularity.monthly %}About {{ popularity.monthly | number }} npm downloads and jsDelivr hits a month{% if entry.data.library %} (whole {{ entry.data.package }} package){% endif %}{% endif %}{% if popularity.monthly and popularity.stars %}, {% endif %}{% if popularity.stars %}{{ popularity.stars | number }} GitHub stars{% endif %}"><dt>Popular</dt><dd><span class="dots" aria-hidden="true">{% for i in range(5) %}<span class="dot{% if i < popularity.score %} on{% endif %}"></span>{% endfor %}</span><span class="sr-only">{{ popularity.score }} out of 5</span></dd></div>
+			{%- endif %}
+		</dl>
+		{%- endif %}
+		<div class="card-footer">
+			{%- set base = baseLibraries[entry.data.builtWith] %}
+			{%- if base and entry.data.builtWith != "Vanilla" %}
+			<span class="card-built-with">{% if base.logo %}<img src="{{ base.logo }}" alt="" class="logo" width="16" height="16">{% endif %}{{ base.label or entry.data.builtWith }}</span>
+			{%- endif %}
+			{%- set githubRepo = entry.data.repository if (entry.data.repository and "github.com" in entry.data.repository) %}
+			{%- if entry.data.documentation or entry.data.demo or entry.data.commercial or entry.data.package or githubRepo %}
+			<span class="pills">
+				{%- if entry.data.package %}<a href="{{ entry.data.package | npmUrl }}" class="pill pill-npm" title="Published to npm as {{ entry.data.package }}"><i class="fa-brands fa-npm"></i><span class="sr-only">{{ entry.data.package }} on npm</span></a>{% endif %}
+				{%- if githubRepo %}<a href="{{ githubRepo }}" class="pill pill-npm pill-github" title="Source code on GitHub"><i class="fa-brands fa-github"></i><span class="sr-only">{{ entry.data.tagName }} on GitHub</span></a>{% endif %}
+				{%- if entry.data.commercial %}<span class="pill pill-commercial" title="{{ entry.data.license }}">Pro</span>{% endif %}
+				{%- if entry.data.documentation %}<a href="{{ entry.data.documentation }}" class="pill"><i class="fa-solid fa-book"></i> Docs<span class="sr-only"> for {{ entry.data.tagName }}</span></a>{% endif %}
+				{%- if entry.data.demo %}<a href="{{ entry.data.demo }}" class="pill"><i class="fa-solid fa-eye"></i> Demo<span class="sr-only"> of {{ entry.data.tagName }}</span></a>{% endif %}
+			</span>
+			{%- endif %}
+		</div>
+	</li>
+	{%- endfor %}
+</ul>
+
+<script type="module" src="/component-search.js"></script>
+<script type="module" src="/component-of-the-week.js"></script>

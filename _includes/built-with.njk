@@ -1,0 +1,4 @@
+{%- set base = baseLibraries[name] -%}
+{%- if base.url %}<a href="{{ base.url }}" class="built-with">{% else %}<span class="built-with">{% endif -%}
+{%- if base.logo %}<img src="{{ base.logo }}" alt="" class="logo" width="16" height="16">{% endif %}{{ base.label or name }}
+{%- if base.url %}</a>{% else %}</span>{% endif -%}

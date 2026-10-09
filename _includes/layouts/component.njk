@@ -1,0 +1,125 @@
+---
+layout: layouts/base.njk
+---
+<article class="component" data-pagefind-body>
+	<h1 data-pagefind-meta="title">{% if deprecated or archived %}<del><code>&lt;{{ tagName }}&gt;</code></del>{% else %}<code>&lt;{{ tagName }}&gt;</code>{% endif %}</h1>
+	<p class="lede">{{ description }}</p>
+	{%- if deprecated %}
+	<p class="notice notice-retired"><i class="fa-solid fa-ban"></i> Deprecated on npm: “{{ deprecated }}”</p>
+	{%- elif archived %}
+	<p class="notice notice-retired"><i class="fa-solid fa-box-archive"></i> The source repository is archived and read-only.</p>
+	{%- elif package and published[package].latest and not published[package].version %}
+	<p class="notice notice-retired"><i class="fa-solid fa-flask"></i> Prerelease: no stable version yet (latest is <code>{{ published[package].latest }}</code>).</p>
+	{%- endif %}
+	{%- set successor = collections.components | findByTag(supersededBy) if supersededBy %}
+	{%- if successor %}
+	<p class="notice" data-pagefind-ignore><i class="fa-solid fa-circle-arrow-right"></i> Superseded by <a href="{{ successor.url }}"><code>&lt;{{ successor.data.tagName }}&gt;</code></a>{% if successor.data.library %} in {{ successor.data.library.name }}{% endif %}.</p>
+	{%- endif %}
+
+	<dl class="meta">
+		<dt>Category</dt>
+		<dd data-pagefind-filter="category"><a href="/?category={{ category | urlencode }}">{{ category }}</a></dd>
+		{% if builtWith %}
+		<dt>Built with</dt>
+		<dd data-pagefind-filter="built with">{% set name = builtWith %}{% include "built-with.njk" %}</dd>
+		{% endif %}
+		<dt>Library</dt>
+		<dd data-pagefind-filter="library">{% if library %}{% if library.url %}<a href="{{ library.url }}">{{ library.url | avatar | safe }}{{ library.name }}</a>{% else %}{{ library.name }}{% endif %}{% else %}Standalone{% endif %}</dd>
+		{% if author %}
+		<dt>Author</dt>
+		<dd data-pagefind-filter="author">{% if authorUrl %}<a href="{{ authorUrl }}">{{ authorUrl | avatar | safe }}{{ author }}</a>{% else %}{{ author }}{% endif %}</dd>
+		{% endif %}
+		{% if package %}
+		<dt>Package</dt>
+		<dd><a href="{{ package | npmUrl }}"><i class="fa-brands fa-npm"></i> <code>{{ package }}</code></a></dd>
+		{% endif %}
+		{% if jsSize %}
+		{% set librarySize = librarySizes[library.name] %}
+		<dt>{% if librarySize %}Component size{% else %}Size{% endif %}</dt>
+		<dd>{{ jsSize | bytes }} JS{% if cssSize %} + {{ cssSize | bytes }} CSS{% endif %} <small class="muted">(minified + gzipped, JS includes dependencies{% if librarySize %} beyond the library{% endif %})</small></dd>
+		{% if librarySize %}
+		<dt>Library size</dt>
+		<dd>{{ librarySize.jsSize | bytes }} JS <small class="muted">(shared by every {{ library.name }} component, loaded once per page)</small></dd>
+		{% endif %}
+		{% endif %}
+		{%- set popular = false if (archived or deprecated or supersededBy) else ((downloads[package] if package) | popularity(stars)) %}
+		{% if popular and popular.score >= 1 %}
+		<dt>Popular</dt>
+		<dd><span class="dots" aria-hidden="true">{% for i in range(5) %}<span class="dot{% if i < popular.score %} on{% endif %}"></span>{% endfor %}</span><span class="sr-only">{{ popular.score }} out of 5</span></dd>
+		{% endif %}
+		{#- Minimums: 100 npm downloads a week, 1,000 jsDelivr hits a month. #}
+		{% set stats = downloads[package] if package %}
+		{% set npmDownloads = stats.npm if (stats and stats.npm >= 100) %}
+		{% set cdnHits = stats.cdn if (stats and stats.cdn >= 1000) %}
+		{% if npmDownloads or cdnHits %}
+		<dt>Downloads</dt>
+		<dd>
+			{%- if npmDownloads %}<a href="{{ package | npmUrl }}"><i class="fa-brands fa-npm"></i> {{ npmDownloads | number }}/week</a>{% endif %}
+			{%- if npmDownloads and cdnHits %} · {% endif %}
+			{%- if cdnHits %}<a href="https://www.jsdelivr.com/package/npm/{{ package }}">jsDelivr {{ cdnHits | number }} hits/month</a>{% endif %}
+			{%- if library %} <small class="muted">(whole {{ package }} package)</small>{% endif %}
+		</dd>
+		{% endif %}
+		{% if stars %}
+		<dt>GitHub stars</dt>
+		<dd><a href="{{ repository }}"><i class="fa-solid fa-star"></i> {{ stars | number }}</a></dd>
+		{% endif %}
+		{% set release = published[package] if package %}
+		{% if release.version %}
+		<dt>Latest stable version</dt>
+		<dd><a href="{{ package | npmUrl }}?activeTab=versions"><code>{{ release.version }}</code></a></dd>
+		{% endif %}
+		{% if release.date %}
+		<dt>Last published</dt>
+		<dd><time datetime="{{ release.date }}">{{ release.date | date }}</time></dd>
+		{% endif %}
+		{% if license %}
+		<dt>License</dt>
+		<dd><span data-pagefind-filter="license">{{ license }}</span>{% if commercial %} <span class="pill pill-commercial">Pro</span>{% endif %}</dd>
+		{% endif %}
+		{% if status %}
+		<dt>Status</dt>
+		<dd>{{ status }}</dd>
+		{% endif %}
+	</dl>
+
+	<ul class="links" data-pagefind-ignore>
+		{% if documentation %}<li><a href="{{ documentation }}"><i class="fa-solid fa-book"></i> Documentation</a></li>{% endif %}
+		{% if demo %}<li><a href="{{ demo }}"><i class="fa-solid fa-eye"></i> Demo</a></li>{% endif %}
+		{% if repository %}<li><a href="{{ repository }}"><i class="{% if 'github.com' in repository %}fa-brands fa-github{% else %}fa-solid fa-code{% endif %}"></i> Source code</a></li>{% endif %}
+	</ul>
+
+	{% set previews = [["Documentation", documentation], ["Demo", demo], ["Source code", repository]] | previews if library.name != "Web Awesome" else [] %}
+	{% if previews.length %}
+	<ul class="screenshots" data-pagefind-ignore>
+		{%- for preview in previews %}
+		<li>
+			<a href="{{ preview.url }}" class="screenshot">
+				<img src="{{ preview.src }}" alt="" width="1200" height="630" loading="lazy" decoding="async">
+				<span class="screenshot-label">{{ preview.label }}</span>
+			</a>
+		</li>
+		{%- endfor %}
+	</ul>
+	{% endif %}
+
+	{% if keywords.length %}
+	<ul class="keywords" aria-label="Keywords">
+		{% for keyword in keywords %}<li>{{ keyword }}</li>{% endfor %}
+	</ul>
+	{% endif %}
+
+	{% if content | trim %}
+	<div class="content">{{ content | safe }}</div>
+	{% endif %}
+
+	{% set api = [["Attributes", attributes], ["Slots", slots], ["Events", events], ["CSS Parts", cssParts]] %}
+	{% for label, items in api %}
+	{% if items.length %}
+	<h2>{{ label }}</h2>
+	<ul class="api">
+		{% for item in items %}<li><code>{{ item }}</code></li>{% endfor %}
+	</ul>
+	{% endif %}
+	{% endfor %}
+</article>

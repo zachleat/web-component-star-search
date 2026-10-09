@@ -1,0 +1,25 @@
+{
+  "name": "web-component-star-search",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve --quiet",
+    "import:cem": "node scripts/import-cem.js",
+    "import:npm": "node scripts/import-npm.js",
+    "categorize": "node scripts/categorize.js",
+    "measure": "node scripts/measure-sizes.js",
+    "check-status": "node scripts/check-status.js",
+    "find-demos": "node scripts/find-demos.js"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^4.0.0-alpha.10",
+    "@11ty/eleventy-fetch": "^5.1.3",
+    "@11ty/font-awesome": "^2.0.0",
+    "esbuild": "^0.28.2",
+    "pagefind": "^1.5.2"
+  },
+  "dependencies": {
+    "@zachleat/solar-eclipse-toggle": "^2.2.1"
+  }
+}

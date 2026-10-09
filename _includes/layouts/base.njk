@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{% if title %}{{ title }} — {% endif %}Web Component Star Search</title>
+	{% if description %}<meta name="description" content="{{ description }}">{% endif %}
+	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+	<script>
+	try {
+		var theme = localStorage.getItem("theme");
+		if(theme === "light" || theme === "dark") {
+			document.documentElement.setAttribute("data-theme", theme);
+		}
+	} catch(e) {}
+	</script>
+	<link rel="stylesheet" href="/style.css">
+	<link rel="stylesheet" href="/static/solar-eclipse-toggle.css">
+	<script type="module" src="/static/solar-eclipse-toggle.js"></script>
+</head>
+<body>
+	{% include "demo-nav.html" %}
+	<header class="site-header">
+		<a href="/" class="site-title"><span class="site-icons">🚾<i class="fa-solid fa-star"></i><i class="fa-solid fa-magnifying-glass"></i></span>Web Component Star Search</a>
+	</header>
+	<main id="main">
+		{{ content | safe }}
+	</main>
+	<footer class="site-footer">
+		<p>{{ collections.components.length }} custom elements and counting.</p>
+		<solar-eclipse-toggle>
+			<button type="button" disabled>
+				<span class="se-label-dark" hidden><i class="fa-solid fa-moon"></i>Use dark theme</span>
+				<span class="se-label-light" hidden><i class="fa-solid fa-sun"></i>Use light theme</span>
+				<span class="se-label-unknown"><i class="fa-solid fa-circle-half-stroke"></i>Theme</span>
+			</button>
+		</solar-eclipse-toggle>
+	</footer>
+	{% getBundle "fontawesome" %}
+</body>
+</html>

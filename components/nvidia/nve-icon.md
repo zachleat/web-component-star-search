@@ -1,0 +1,18 @@
+---
+tagName: nve-icon
+stars: 88
+description: An icon is a graphic symbol designed to visually show the purpose of an interface element.
+category: Media
+builtWith: Lit
+jsSize: 26086
+library:
+  name: NVIDIA Elements
+  url: https://nvidia.github.io/elements/
+package: "@nvidia-elements/core"
+repository: https://github.com/NVIDIA/elements
+documentation: https://nvidia.github.io/elements/docs/elements/icon/
+license: Apache-2.0
+author: NVIDIA
+authorUrl: https://www.nvidia.com/
+attributes: [status, size, direction, appearance, name]
+---

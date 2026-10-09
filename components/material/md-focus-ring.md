@@ -1,0 +1,17 @@
+---
+tagName: md-focus-ring
+stars: 11283
+description: "TODO(b/267336424): add docs"
+category: Utilities
+builtWith: Lit
+jsSize: 1607
+library:
+  name: Material Web
+  url: https://material-web.dev/
+package: "@material/web"
+repository: https://github.com/material-components/material-web
+documentation: "https://github.com/material-components/material-web#readme"
+license: Apache-2.0
+author: Google
+authorUrl: https://material-web.dev/
+---
