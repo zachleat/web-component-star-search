@@ -1,5 +1,6 @@
 ---
 tagName: wa-details
+added: 2026-09-28
 stars: 1348
 description: "Details display a brief summary and expand to reveal additional content. Use them to progressively disclose information, group related FAQs, or hide advanced options."
 category: Layout

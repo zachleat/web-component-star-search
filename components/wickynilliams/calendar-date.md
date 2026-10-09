@@ -1,5 +1,6 @@
 ---
 tagName: calendar-date
+added: 2026-09-27
 stars: 1653
 description: Calendar for selecting a single date.
 category: Data

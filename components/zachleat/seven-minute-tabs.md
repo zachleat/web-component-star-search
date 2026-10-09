@@ -1,5 +1,6 @@
 ---
 tagName: seven-minute-tabs
+added: 2026-09-27
 stars: 103
 description: A no-theme tabs component based heavily on an example from the WAI-ARIA Authoring Practices documentation.
 category: Navigation

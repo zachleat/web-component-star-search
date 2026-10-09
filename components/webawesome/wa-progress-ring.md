@@ -1,5 +1,6 @@
 ---
 tagName: wa-progress-ring
+added: 2026-09-28
 stars: 1348
 description: Progress rings show how far along a determinate operation is using a circular indicator. Use them as a compact alternative to progress bars when horizontal space is limited.
 category: Feedback

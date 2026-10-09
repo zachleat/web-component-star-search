@@ -1,5 +1,6 @@
 ---
 tagName: nve-star-rating
+added: 2026-09-28
 stars: 88
 description: "A star rating component lets users rate something using stars, providing a quick visual representation of feedback"
 category: Forms

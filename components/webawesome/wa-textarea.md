@@ -1,5 +1,6 @@
 ---
 tagName: wa-textarea
+added: 2026-09-28
 stars: 1348
 description: "Textareas collect multi-line text input from the user, with optional resizing and character counting."
 category: Forms

@@ -1,5 +1,6 @@
 ---
 tagName: lite-youtube
+added: 2026-09-27
 stars: 6351
 description: A faster youtube embed.
 category: Media

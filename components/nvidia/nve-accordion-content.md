@@ -1,5 +1,6 @@
 ---
 tagName: nve-accordion-content
+added: 2026-09-28
 stars: 88
 description: Contains the collapsible body content that reveals or hides when the parent accordion expands or collapses.
 category: Layout

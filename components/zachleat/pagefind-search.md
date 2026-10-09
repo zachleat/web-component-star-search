@@ -1,5 +1,6 @@
 ---
 tagName: pagefind-search
+added: 2026-09-27
 stars: 37
 description: A web component to search with Pagefind.
 category: Utilities

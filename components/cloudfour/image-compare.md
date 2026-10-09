@@ -1,5 +1,6 @@
 ---
 tagName: image-compare
+added: 2026-09-27
 description: "A tiny, zero-dependency web component for comparing two images using a slider. Built with a focus on accessibility, performance, and progressive enhancement."
 category: Media
 builtWith: Vanilla

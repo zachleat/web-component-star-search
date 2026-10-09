@@ -1,5 +1,6 @@
 ---
 tagName: sl-checkbox
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Checkboxes allow the user to toggle an option on or off.

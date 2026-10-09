@@ -1,5 +1,6 @@
 ---
 tagName: nve-control-group
+added: 2026-09-28
 stars: 88
 description: Groups many related form controls under a shared label and validation context for semantically linked inputs.
 category: Layout

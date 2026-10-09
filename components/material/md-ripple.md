@@ -1,5 +1,6 @@
 ---
 tagName: md-ripple
+added: 2026-09-27
 stars: 11283
 description: "Ripples, also known as state layers, are visual indicators used to communicate the status of a component or interactive element."
 category: Feedback

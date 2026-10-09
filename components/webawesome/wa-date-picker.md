@@ -1,5 +1,6 @@
 ---
 tagName: wa-date-picker
+added: 2026-09-28
 description: Date pickers display a month grid for selecting a single date or a date range inline.
 category: Forms
 builtWith: Lit

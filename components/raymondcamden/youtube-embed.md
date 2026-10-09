@@ -1,5 +1,6 @@
 ---
 tagName: youtube-embed
+added: 2026-09-27
 stars: 4
 description: A lazy-loading YouTube embed that shows a thumbnail until clicked.
 category: Media

@@ -1,5 +1,6 @@
 ---
 tagName: calendar-multi
+added: 2026-09-27
 stars: 1653
 description: Calendar for selecting multiple dates.
 category: Data

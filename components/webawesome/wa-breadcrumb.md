@@ -1,5 +1,6 @@
 ---
 tagName: wa-breadcrumb
+added: 2026-09-28
 stars: 1348
 description: "Breadcrumbs display a trail of links that show users where they are in a site's hierarchy. They help users understand the current location and navigate back to parent pages."
 category: Navigation

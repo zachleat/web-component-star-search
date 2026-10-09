@@ -1,5 +1,6 @@
 ---
 tagName: wa-carousel-item
+added: 2026-09-27
 stars: 1348
 description: Carousel items represent individual slides within a carousel.
 category: Media

@@ -1,5 +1,6 @@
 ---
 tagName: scroll-shadow
+added: 2026-09-27
 stars: 44
 description: A small web component to enhance scrollable elements with dynamic scroll indicators.
 category: Layout

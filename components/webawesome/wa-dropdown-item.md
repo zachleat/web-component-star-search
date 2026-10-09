@@ -1,5 +1,6 @@
 ---
 tagName: wa-dropdown-item
+added: 2026-09-28
 stars: 1348
 description: "Dropdown items represent selectable entries within a dropdown menu, including standard actions, checkable items, and submenu triggers."
 category: Overlays

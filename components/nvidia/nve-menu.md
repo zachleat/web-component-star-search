@@ -1,5 +1,6 @@
 ---
 tagName: nve-menu
+added: 2026-09-28
 stars: 88
 description: "A menu offers a list of choices to the user, such as a set of actions or functions. Choosing an item in a menu typically opens a sub menu, or invokes a command."
 category: Navigation

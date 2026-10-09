@@ -1,5 +1,6 @@
 ---
 tagName: sl-divider
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Dividers are used to visually separate or group elements.

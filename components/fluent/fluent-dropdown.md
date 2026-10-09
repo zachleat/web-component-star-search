@@ -1,5 +1,6 @@
 ---
 tagName: fluent-dropdown
+added: 2026-09-27
 stars: 20298
 description: "The Fluent Dropdown Element. Implements @microsoft/fast-foundation#BaseDropdown."
 category: Overlays

@@ -1,5 +1,6 @@
 ---
 tagName: md-filled-icon-button
+added: 2026-09-27
 stars: 11283
 description: Icon buttons help people take supplementary actions with a single tap.
 category: Media

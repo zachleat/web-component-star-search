@@ -1,5 +1,6 @@
 ---
 tagName: md-secondary-tab
+added: 2026-09-27
 stars: 11283
 description: Tab allow users to display a tab within a Tabs.
 category: Navigation

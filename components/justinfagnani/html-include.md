@@ -1,5 +1,6 @@
 ---
 tagName: html-include
+added: 2026-09-27
 stars: 268
 description: Include HTML files into your page
 category: Content

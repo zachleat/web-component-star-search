@@ -1,5 +1,6 @@
 ---
 tagName: wa-icon
+added: 2026-09-28
 stars: 1348
 description: "Icons are scalable vector symbols that represent actions, content, or status throughout your application. They support Font Awesome and custom icon libraries with animation presets."
 category: Media

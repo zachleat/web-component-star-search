@@ -1,5 +1,6 @@
 ---
 tagName: spacer-gif
+added: 2026-09-27
 stars: 46
 description: The most transparent way of adding space to your web page.
 category: Layout

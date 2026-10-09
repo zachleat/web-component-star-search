@@ -1,5 +1,6 @@
 ---
 tagName: nve-alert-group
+added: 2026-09-28
 stars: 88
 description: "An alert group is an element that displays a group of related and important messages in a way that attracts the user's attention without interrupting the user's task."
 category: Feedback

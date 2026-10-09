@@ -1,5 +1,6 @@
 ---
 tagName: wa-dialog
+added: 2026-09-28
 stars: 1348
 description: "Dialogs appear above the page and require the user's immediate attention. Use them for confirmations, forms, or focused tasks that interrupt the main flow."
 category: Overlays

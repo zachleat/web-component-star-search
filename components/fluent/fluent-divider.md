@@ -1,5 +1,6 @@
 ---
 tagName: fluent-divider
+added: 2026-09-27
 stars: 20298
 description: A Divider Custom HTML Element. Based on BaseDivider and includes style and layout specific attributes
 category: Layout

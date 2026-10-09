@@ -1,5 +1,6 @@
 ---
 tagName: nve-pulse
+added: 2026-09-28
 stars: 88
 description: Pulse component signals attention for a particular area of a UI. This helps with tutorial/getting started guides for new users.
 category: Layout

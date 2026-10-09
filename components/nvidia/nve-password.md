@@ -1,5 +1,6 @@
 ---
 tagName: nve-password
+added: 2026-09-28
 stars: 88
 description: A password is a control that enables users to enter password text.
 category: Forms

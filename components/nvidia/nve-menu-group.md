@@ -1,5 +1,6 @@
 ---
 tagName: nve-menu-group
+added: 2026-10-08
 description: Organizes related menu items under a disclosure header that can show or hide one child menu.
 category: Navigation
 builtWith: Lit

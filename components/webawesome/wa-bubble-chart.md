@@ -1,5 +1,6 @@
 ---
 tagName: wa-bubble-chart
+added: 2026-09-28
 description: Bubble charts add a third dimension to scatter plots by varying the size of each data point.
 category: Data
 builtWith: Lit

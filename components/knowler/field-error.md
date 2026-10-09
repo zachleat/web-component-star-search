@@ -1,5 +1,6 @@
 ---
 tagName: field-error
+added: 2026-09-28
 description: A field error element for displaying custom error messages that are associated with form controls.
 category: Forms
 builtWith: Vanilla

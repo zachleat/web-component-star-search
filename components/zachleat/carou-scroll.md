@@ -1,5 +1,6 @@
 ---
 tagName: carou-scroll
+added: 2026-09-27
 stars: 130
 description: Add next/previous buttons to a horizontal scrollable container.
 category: Layout

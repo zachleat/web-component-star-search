@@ -1,5 +1,6 @@
 ---
 tagName: nve-grid-cell
+added: 2026-09-28
 stars: 88
 description: "Represents an individual data cell within a grid row, displaying content aligned to its parent column."
 category: Layout

@@ -1,5 +1,6 @@
 ---
 tagName: fluent-text
+added: 2026-09-27
 stars: 20298
 description: The base class used for constructing a fluent-text custom element
 category: Content

@@ -1,5 +1,6 @@
 ---
 tagName: fluent-tablist
+added: 2026-09-27
 stars: 20298
 description: A Tablist component.
 category: Navigation

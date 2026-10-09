@@ -1,5 +1,6 @@
 ---
 tagName: relative-time
+added: 2026-09-27
 stars: 4036
 description: "Formats a timestamp as a localized string or as relative text that auto-updates in the user's browser."
 category: Data

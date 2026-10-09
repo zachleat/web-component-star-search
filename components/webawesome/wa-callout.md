@@ -1,5 +1,6 @@
 ---
 tagName: wa-callout
+added: 2026-09-28
 stars: 1348
 description: "Callouts display important messages inline with surrounding content. Use them to highlight tips, warnings, errors, or other information users should not miss."
 category: Feedback

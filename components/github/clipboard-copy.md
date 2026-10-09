@@ -1,5 +1,6 @@
 ---
 tagName: clipboard-copy
+added: 2026-09-27
 stars: 491
 description: Copy element text content or input values to the clipboard.
 category: Actions

@@ -1,5 +1,6 @@
 ---
 tagName: pdf-viewer
+added: 2026-10-08
 description: A web component for displaying PDFs
 category: Media
 builtWith: Lit

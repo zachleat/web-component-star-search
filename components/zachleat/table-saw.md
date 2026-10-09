@@ -1,5 +1,6 @@
 ---
 tagName: table-saw
+added: 2026-09-27
 stars: 338
 description: A small web component for responsive <table> elements.
 category: Data

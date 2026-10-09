@@ -1,5 +1,6 @@
 ---
 tagName: nve-panel
+added: 2026-09-28
 stars: 88
 description: "Panel is inline container for content that couples to the content on the page (details, extra actions/options)."
 category: Layout

@@ -1,5 +1,6 @@
 ---
 tagName: mastodon-post
+added: 2026-09-27
 stars: 39
 description: A Web Component to display Mastodon posts and their metadata
 category: Content

@@ -1,5 +1,6 @@
 ---
 tagName: json-viewer
+added: 2026-09-27
 stars: 242
 builtWith: Lit
 jsSize: 9874

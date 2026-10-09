@@ -1,5 +1,6 @@
 ---
 tagName: sl-tree-item
+added: 2026-09-27
 archived: true
 stars: 13834
 description: A tree item serves as a hierarchical node that lives inside a tree.

@@ -1,5 +1,6 @@
 ---
 tagName: nve-dot
+added: 2026-09-28
 stars: 88
 description: A visual indicator that communicates a status or notification of an associated component.
 category: Feedback

@@ -1,5 +1,6 @@
 ---
 tagName: sl-rating
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Ratings give users a way to quickly view and provide feedback.

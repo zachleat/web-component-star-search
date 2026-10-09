@@ -1,5 +1,6 @@
 ---
 tagName: fit-vids
+added: 2026-09-27
 stars: 39
 description: Web Component version of FitVids from the maker of FitVids
 category: Media

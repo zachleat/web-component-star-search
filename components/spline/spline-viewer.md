@@ -1,5 +1,6 @@
 ---
 tagName: spline-viewer
+added: 2026-09-27
 description: Embeds an interactive 3D scene made in Spline.
 category: Media
 builtWith: Lit

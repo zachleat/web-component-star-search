@@ -1,5 +1,6 @@
 ---
 tagName: range-slider
+added: 2026-09-27
 stars: 93
 description: A cross browser customizable and accessible <range-slider> web component
 category: Forms

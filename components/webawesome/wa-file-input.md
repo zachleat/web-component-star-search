@@ -1,5 +1,6 @@
 ---
 tagName: wa-file-input
+added: 2026-09-28
 description: File inputs allow users to select files from their device.
 category: Forms
 builtWith: Lit

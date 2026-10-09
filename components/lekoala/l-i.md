@@ -1,5 +1,6 @@
 ---
 tagName: l-i
+added: 2026-09-27
 stars: 34
 description: One custom icon element to rule them all
 category: Media

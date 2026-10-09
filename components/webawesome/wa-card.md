@@ -1,5 +1,6 @@
 ---
 tagName: wa-card
+added: 2026-09-28
 stars: 1348
 description: "Cards group related content and actions inside a bordered container. Use them to present products, articles, user profiles, or any self-contained unit of information."
 category: Layout

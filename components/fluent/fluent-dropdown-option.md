@@ -1,5 +1,6 @@
 ---
 tagName: fluent-dropdown-option
+added: 2026-09-27
 stars: 20298
 description: "A DropdownOption Custom HTML Element. Implements the | ARIA option role."
 category: Overlays

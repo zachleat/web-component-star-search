@@ -1,5 +1,6 @@
 ---
 tagName: elena-stack
+added: 2026-09-27
 stars: 192
 description: Stack component manages layout of immediate children with optional spacing between each child.
 category: Layout

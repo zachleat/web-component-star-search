@@ -1,5 +1,6 @@
 ---
 tagName: nve-toggletip
+added: 2026-09-28
 stars: 88
 description: Generic toggletip element for rendering a variety of different interactive content. MDN Popover API
 category: Content

@@ -1,5 +1,6 @@
 ---
 tagName: nve-time
+added: 2026-09-28
 stars: 88
 description: A time picker is a control that enables users to choose a time value.
 category: Data

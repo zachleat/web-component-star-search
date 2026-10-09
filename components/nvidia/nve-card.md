@@ -1,5 +1,6 @@
 ---
 tagName: nve-card
+added: 2026-09-28
 stars: 88
 description: A container for content representing a single entity.
 category: Layout

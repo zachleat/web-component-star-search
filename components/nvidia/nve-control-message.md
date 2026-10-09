@@ -1,5 +1,6 @@
 ---
 tagName: nve-control-message
+added: 2026-09-28
 stars: 88
 description: Defining a Validity State on a control-message allows messages to show conditionally based on the current HTML5 validity state.
 category: Feedback

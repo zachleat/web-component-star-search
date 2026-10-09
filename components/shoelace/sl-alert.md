@@ -1,5 +1,6 @@
 ---
 tagName: sl-alert
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Alerts are used to display important messages inline or as toast notifications.

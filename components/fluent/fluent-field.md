@@ -1,5 +1,6 @@
 ---
 tagName: fluent-field
+added: 2026-09-27
 stars: 20298
 description: A Field Custom HTML Element. Based on BaseField and includes style and layout specific attributes
 category: Forms

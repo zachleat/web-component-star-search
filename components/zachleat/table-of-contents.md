@@ -1,5 +1,6 @@
 ---
 tagName: table-of-contents
+added: 2026-09-27
 stars: 11
 description: A zero-dependency web component that progressively enhances (or optionally client renders) a table of contents from the headings on the page and highlights visible sections.
 category: Navigation

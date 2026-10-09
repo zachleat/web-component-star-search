@@ -1,5 +1,6 @@
 ---
 tagName: wa-comparison
+added: 2026-09-28
 stars: 1348
 description: "Comparisons show the visual differences between two pieces of similar content using a draggable divider. Use them for before/after images, design revisions, or side-by-side previews."
 category: Effects

@@ -1,5 +1,6 @@
 ---
 tagName: wa-color-picker
+added: 2026-09-28
 stars: 1348
 description: "Color pickers let users choose a color from a visual palette or by entering a value. They support HEX, RGB, HSL, and HSV formats with optional alpha channel and swatch presets."
 category: Forms

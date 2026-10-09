@@ -1,5 +1,6 @@
 ---
 tagName: nve-menu-item
+added: 2026-09-28
 stars: 88
 description: "Represents a selectable option within a menu, providing an interactive button for navigation or actions."
 category: Navigation

@@ -1,5 +1,6 @@
 ---
 tagName: sl-tab-group
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Tab groups organize content into a container that shows one section at a time.

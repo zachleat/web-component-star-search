@@ -1,5 +1,6 @@
 ---
 tagName: wa-format-date
+added: 2026-09-28
 stars: 1348
 description: "Formats a date or time for display using the specified locale and options. Powered by the Intl.DateTimeFormat API for consistent, localized output."
 category: Data

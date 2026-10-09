@@ -1,5 +1,6 @@
 ---
 tagName: md-focus-ring
+added: 2026-09-27
 stars: 11283
 description: "TODO(b/267336424): add docs"
 category: Utilities

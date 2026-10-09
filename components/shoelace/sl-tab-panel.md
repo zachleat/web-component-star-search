@@ -1,5 +1,6 @@
 ---
 tagName: sl-tab-panel
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Tab panels are used inside tab groups to display tabbed content.

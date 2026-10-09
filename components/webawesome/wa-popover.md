@@ -1,5 +1,6 @@
 ---
 tagName: wa-popover
+added: 2026-09-28
 stars: 1348
 description: Popovers display contextual content and interactive elements in a floating panel anchored to a trigger.
 category: Overlays

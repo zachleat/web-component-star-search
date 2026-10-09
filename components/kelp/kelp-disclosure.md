@@ -1,5 +1,6 @@
 ---
 tagName: kelp-disclosure
+added: 2026-09-27
 stars: 645
 description: "Toggles the visibility of content with an accessible button, including dropdown menus."
 category: Layout

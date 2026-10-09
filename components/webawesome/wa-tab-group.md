@@ -1,5 +1,6 @@
 ---
 tagName: wa-tab-group
+added: 2026-09-28
 stars: 1348
 description: "Tab groups organize related content into a single container that displays one panel at a time, with tabs for switching between them."
 category: Navigation

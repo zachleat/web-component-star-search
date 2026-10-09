@@ -1,5 +1,6 @@
 ---
 tagName: theme-switch
+added: 2026-09-27
 stars: 30
 description: An animated toggle button that switches between light, dark and system themes.
 category: Effects

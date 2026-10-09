@@ -1,5 +1,6 @@
 ---
 tagName: nve-sparkline
+added: 2026-09-28
 stars: 88
 description: "A sparkline is a compact, word-sized chart with typographic scale, for data-dense layouts (text, tables, cards, dashboards)."
 category: Data

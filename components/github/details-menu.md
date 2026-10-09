@@ -1,5 +1,6 @@
 ---
 tagName: details-menu
+added: 2026-09-27
 stars: 610
 description: A menu opened with a <details> button.
 category: Overlays

@@ -1,5 +1,6 @@
 ---
 tagName: form-show-if
+added: 2026-09-27
 stars: 33
 description: Web component that enables you to make one HTML form field show (or not) based on the value(s) of another field.
 category: Forms

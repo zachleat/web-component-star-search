@@ -1,5 +1,6 @@
 ---
 tagName: place-holder
+added: 2026-09-27
 stars: 4
 description: Generates placeholder images of any size without an external service.
 category: Media

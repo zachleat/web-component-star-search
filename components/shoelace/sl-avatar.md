@@ -1,5 +1,6 @@
 ---
 tagName: sl-avatar
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Avatars are used to represent a person or object.

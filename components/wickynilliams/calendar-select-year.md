@@ -1,5 +1,6 @@
 ---
 tagName: calendar-select-year
+added: 2026-09-27
 stars: 1653
 description: "A year dropdown for navigating Cally’s calendars."
 category: Data

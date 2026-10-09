@@ -1,5 +1,6 @@
 ---
 tagName: nve-input
+added: 2026-09-28
 stars: 88
 description: An input is a control that enables users to enter text.
 category: Forms

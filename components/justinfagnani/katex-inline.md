@@ -1,5 +1,6 @@
 ---
 tagName: katex-inline
+added: 2026-09-27
 stars: 25
 description: Web components for easily using KaTeX in HTML
 category: Content

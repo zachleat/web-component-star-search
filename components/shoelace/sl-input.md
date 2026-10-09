@@ -1,5 +1,6 @@
 ---
 tagName: sl-input
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Inputs collect data from the user.

@@ -1,5 +1,6 @@
 ---
 tagName: wa-date-input
+added: 2026-09-28
 description: Date inputs let users enter a date through a segmented field or select one visually from a popup calendar.
 category: Forms
 builtWith: Lit

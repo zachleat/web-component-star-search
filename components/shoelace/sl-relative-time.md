@@ -1,5 +1,6 @@
 ---
 tagName: sl-relative-time
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Outputs a localized time phrase relative to the current date and time.

@@ -1,5 +1,6 @@
 ---
 tagName: wa-polar-area-chart
+added: 2026-09-28
 description: Polar area charts compare values using segments that radiate from a center point with varying radius.
 category: Data
 builtWith: Lit

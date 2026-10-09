@@ -1,5 +1,6 @@
 ---
 tagName: wa-breadcrumb-item
+added: 2026-09-28
 stars: 1348
 description: "Breadcrumb items represent individual links inside a breadcrumb, typically one per level of the site hierarchy."
 category: Navigation

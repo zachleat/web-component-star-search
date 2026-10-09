@@ -1,5 +1,6 @@
 ---
 tagName: typesense-minibar
+added: 2026-09-28
 stars: 74
 description: Fast 2kB autocomplete search bar
 category: Forms

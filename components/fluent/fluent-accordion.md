@@ -1,5 +1,6 @@
 ---
 tagName: fluent-accordion
+added: 2026-09-27
 stars: 20298
 description: "An Accordion Custom HTML Element Implements | ARIA Accordion."
 category: Layout

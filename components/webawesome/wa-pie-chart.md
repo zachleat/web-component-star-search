@@ -1,5 +1,6 @@
 ---
 tagName: wa-pie-chart
+added: 2026-09-28
 description: Pie charts show the proportional composition of a whole as slices of a circle.
 category: Data
 builtWith: Lit

@@ -1,5 +1,6 @@
 ---
 tagName: nve-page-panel-header
+added: 2026-09-28
 stars: 88
 description: Displays the title and contextual controls at the top of a page panel to identify its purpose.
 category: Layout

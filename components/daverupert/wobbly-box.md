@@ -1,5 +1,6 @@
 ---
 tagName: wobbly-box
+added: 2026-09-27
 stars: 28
 description: A web component for drawing wobbly boxes
 category: Effects

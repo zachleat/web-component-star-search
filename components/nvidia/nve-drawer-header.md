@@ -1,5 +1,6 @@
 ---
 tagName: nve-drawer-header
+added: 2026-09-28
 stars: 88
 description: Displays the title and optional close control at the top of a drawer to identify its purpose.
 category: Overlays

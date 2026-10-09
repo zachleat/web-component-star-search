@@ -1,5 +1,6 @@
 ---
 tagName: cm-editor
+added: 2026-10-08
 description: A CodeMirror code editor as a custom element.
 category: Content
 builtWith: Lit

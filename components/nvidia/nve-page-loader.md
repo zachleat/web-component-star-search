@@ -1,5 +1,6 @@
 ---
 tagName: nve-page-loader
+added: 2026-09-28
 stars: 88
 description: "Page Loader is a full-screen version of the `progress-ring` component, for use when the page should remain unusable as the loader displays."
 category: Layout

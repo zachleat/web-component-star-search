@@ -1,5 +1,6 @@
 ---
 tagName: remote-input
+added: 2026-09-27
 stars: 91
 description: An input element that sends its value to a server endpoint and renders the response body.
 category: Forms

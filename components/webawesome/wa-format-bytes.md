@@ -1,5 +1,6 @@
 ---
 tagName: wa-format-bytes
+added: 2026-09-28
 stars: 1348
 description: "Formats a number of bytes as a human-readable string with the appropriate unit, such as kB, MB, or GB. Supports both byte and bit units with configurable locale."
 category: Data

@@ -1,5 +1,6 @@
 ---
 tagName: nve-tabs-group
+added: 2026-09-28
 stars: 88
 description: Coordinates tabs with matching panel content using Invoker Commands and slot-matched panels.
 category: Navigation

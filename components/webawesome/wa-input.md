@@ -1,5 +1,6 @@
 ---
 tagName: wa-input
+added: 2026-09-28
 stars: 1348
 description: "Inputs collect single-line data from the user, such as text, numbers, email addresses, and passwords. They support labels, hints, validation, and prefix or suffix slots."
 category: Forms

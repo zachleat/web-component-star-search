@@ -1,5 +1,6 @@
 ---
 tagName: micro-lighter
+added: 2026-09-27
 stars: 963
 description: "A tiny, dependency-free syntax highlighter built on the CSS Custom Highlight API and TextMate grammars."
 category: Content

@@ -1,5 +1,6 @@
 ---
 tagName: typing-effect
+added: 2026-09-27
 stars: 127
 description: A custom element that shows text as if it were being typed.
 category: Effects

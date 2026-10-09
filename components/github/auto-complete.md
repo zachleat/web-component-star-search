@@ -1,5 +1,6 @@
 ---
 tagName: auto-complete
+added: 2026-09-27
 stars: 407
 description: Auto-complete input values from server results
 category: Forms

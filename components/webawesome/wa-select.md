@@ -1,5 +1,6 @@
 ---
 tagName: wa-select
+added: 2026-09-28
 stars: 1348
 description: Selects let users choose one or more values from a dropdown list of predefined options. Use them in forms when a fixed set of choices needs to fit in limited space.
 category: Forms

@@ -1,5 +1,6 @@
 ---
 tagName: nve-grid-header
+added: 2026-09-28
 stars: 88
 description: "Contains the column headers of a grid, managing column widths and providing structural context for the data rows below."
 category: Layout

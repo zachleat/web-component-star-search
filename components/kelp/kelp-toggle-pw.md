@@ -1,5 +1,6 @@
 ---
 tagName: kelp-toggle-pw
+added: 2026-09-27
 stars: 645
 description: Toggles the visibility of password fields with a button or checkbox.
 category: Forms

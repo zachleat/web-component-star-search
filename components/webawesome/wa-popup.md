@@ -1,5 +1,6 @@
 ---
 tagName: wa-popup
+added: 2026-09-28
 stars: 1348
 description: "Popups declaratively anchor one element to another and keep them positioned together as the page scrolls or resizes. Primarily a low-level building block for popovers, dropdowns, and tooltips."
 category: Overlays

@@ -1,5 +1,6 @@
 ---
 tagName: md-item
+added: 2026-09-27
 stars: 11283
 description: An item layout component that can be used inside list items to give them their customizable structure.
 category: Layout

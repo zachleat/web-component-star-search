@@ -1,5 +1,6 @@
 ---
 tagName: nve-tabs-item
+added: 2026-09-28
 stars: 88
 description: "Represents an individual tab within a tablist, providing a selectable button for switching between content views."
 category: Navigation

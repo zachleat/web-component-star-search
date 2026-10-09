@@ -1,5 +1,6 @@
 ---
 tagName: ninja-keys
+added: 2026-09-27
 stars: 1706
 description: Ninja Keys
 category: Overlays

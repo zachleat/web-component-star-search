@@ -1,5 +1,6 @@
 ---
 tagName: calendar-month
+added: 2026-09-27
 stars: 1653
 description: "A month grid used inside Cally’s calendar components."
 category: Data

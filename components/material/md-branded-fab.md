@@ -1,5 +1,6 @@
 ---
 tagName: md-branded-fab
+added: 2026-09-27
 stars: 11283
 description: "Floating action buttons (FABs) help people take primary actions. They’re used to represent the most important action on a screen, such as Create or Reply."
 category: Actions

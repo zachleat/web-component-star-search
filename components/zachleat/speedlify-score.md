@@ -1,5 +1,6 @@
 ---
 tagName: speedlify-score
+added: 2026-09-27
 stars: 45
 description: A web component to show Lighthouse scores via Speedlify
 category: Feedback

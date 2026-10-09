@@ -1,5 +1,6 @@
 ---
 tagName: nve-dropdown-group
+added: 2026-09-28
 stars: 88
 description: A Dropdown Group streamlines the management of linked dropdowns and supports nested dropdowns for a more organized and intuitive user experience
 category: Overlays

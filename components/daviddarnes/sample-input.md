@@ -1,5 +1,6 @@
 ---
 tagName: sample-input
+added: 2026-09-27
 stars: 12
 description: A Web Component to sample audio or video added to an upload input
 category: Forms

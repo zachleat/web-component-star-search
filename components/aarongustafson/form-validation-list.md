@@ -1,5 +1,6 @@
 ---
 tagName: form-validation-list
+added: 2026-09-27
 stars: 8
 description: A web component comprising a list of validation rules for a field.
 category: Forms

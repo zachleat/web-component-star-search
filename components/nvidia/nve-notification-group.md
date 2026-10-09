@@ -1,5 +1,6 @@
 ---
 tagName: nve-notification-group
+added: 2026-09-28
 stars: 88
 description: "Displays real time updates without interrupting the user's workflow to communicate an important message or status."
 category: Feedback

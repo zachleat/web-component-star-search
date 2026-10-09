@@ -1,5 +1,6 @@
 ---
 tagName: reveal-preso
+added: 2026-09-27
 description: Builds a Reveal.js slide presentation from simple markup.
 category: Content
 builtWith: Vanilla

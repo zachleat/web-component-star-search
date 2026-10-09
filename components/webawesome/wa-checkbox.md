@@ -1,5 +1,6 @@
 ---
 tagName: wa-checkbox
+added: 2026-09-28
 stars: 1348
 description: "Checkboxes let users toggle an option on or off, or select multiple items from a list. They also support an indeterminate state for partial selections in groups."
 category: Forms

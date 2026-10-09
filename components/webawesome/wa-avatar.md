@@ -1,5 +1,6 @@
 ---
 tagName: wa-avatar
+added: 2026-09-28
 stars: 1348
 description: "Avatars represent a person or object with an image, initials, or icon. Use them in lists, comments, and profiles to give users visual context at a glance."
 category: Media

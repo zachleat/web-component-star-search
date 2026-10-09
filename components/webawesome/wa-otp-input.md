@@ -1,5 +1,6 @@
 ---
 tagName: wa-otp-input
+added: 2026-09-28
 stars: 1348
 description: "OTP inputs collect one-time passcodes, PINs, and other fixed-length codes, one character per segment. Use them for SMS verification, two-factor authentication, and invite codes."
 category: Forms

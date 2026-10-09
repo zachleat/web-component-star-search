@@ -1,5 +1,6 @@
 ---
 tagName: wa-animation
+added: 2026-09-28
 stars: 1348
 description: "Animate elements declaratively with nearly 100 baked-in presets, or roll your own with custom keyframes. Powered by the Web Animations API."
 category: Effects

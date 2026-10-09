@@ -1,5 +1,6 @@
 ---
 tagName: kelp-autogrow
+added: 2026-09-27
 stars: 645
 description: Automatically grows a textarea’s height to fit its content as the user types.
 category: Forms

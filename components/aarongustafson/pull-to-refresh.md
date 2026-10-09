@@ -1,5 +1,6 @@
 ---
 tagName: pull-to-refresh
+added: 2026-09-27
 stars: 5
 description: Web component that enables pull-to-refresh functionality.
 category: Utilities

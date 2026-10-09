@@ -1,5 +1,6 @@
 ---
 tagName: wa-tab-panel
+added: 2026-09-28
 stars: 1348
 description: Tab panels hold the content shown for a single tab inside a tab group.
 category: Navigation

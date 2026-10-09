@@ -1,5 +1,6 @@
 ---
 tagName: is-playing
+added: 2026-09-27
 stars: 13
 description: "A Web Component to indicate when an audio, or video, element is playing"
 category: Media

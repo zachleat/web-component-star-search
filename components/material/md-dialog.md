@@ -1,5 +1,6 @@
 ---
 tagName: md-dialog
+added: 2026-09-27
 stars: 11283
 description: "Dialogs can require an action, communicate information, or help users accomplish a task. There are two types of dialogs: basic and full-screen."
 category: Overlays

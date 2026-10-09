@@ -1,5 +1,6 @@
 ---
 tagName: vellum-dice
+added: 2026-09-27
 stars: 7
 description: Web component and interactive dice roller.
 category: Effects

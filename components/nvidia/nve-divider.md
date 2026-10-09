@@ -1,5 +1,6 @@
 ---
 tagName: nve-divider
+added: 2026-09-28
 stars: 88
 description: Divider is a component that separates and distinguishes sections of content or groups of menuitems.
 category: Layout

@@ -1,5 +1,6 @@
 ---
 tagName: kelp-select-all
+added: 2026-09-27
 stars: 645
 description: A checkbox that selects or clears a group of related checkboxes.
 category: Forms

@@ -1,5 +1,6 @@
 ---
 tagName: wa-random-content
+added: 2026-09-28
 stars: 1348
 description: "Selects one or more child elements at random and displays them, hiding the rest."
 category: Effects

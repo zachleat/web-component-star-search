@@ -1,5 +1,6 @@
 ---
 tagName: nve-alert
+added: 2026-09-28
 stars: 88
 description: "Alert is an element that displays a brief, important message in a way that attracts the user's attention without interrupting the user's task."
 category: Feedback

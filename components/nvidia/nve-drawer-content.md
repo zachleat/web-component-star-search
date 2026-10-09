@@ -1,5 +1,6 @@
 ---
 tagName: nve-drawer-content
+added: 2026-09-28
 stars: 88
 description: Contains the scrollable main body content within a drawer panel.
 category: Overlays

@@ -1,5 +1,6 @@
 ---
 tagName: md-text-button
+added: 2026-09-27
 stars: 11283
 description: "Buttons help people take action, such as sending an email, sharing a document, or liking a comment."
 category: Content

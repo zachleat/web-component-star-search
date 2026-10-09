@@ -1,5 +1,6 @@
 ---
 tagName: snow-fall
+added: 2026-09-27
 stars: 147
 description: A web component to add snow to your web site (or to an element on your web site).
 category: Effects

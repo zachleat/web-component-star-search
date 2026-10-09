@@ -1,5 +1,6 @@
 ---
 tagName: wa-doughnut-chart
+added: 2026-09-28
 description: Doughnut charts show proportional data as slices of a ring with a hollow center.
 category: Data
 builtWith: Lit

@@ -1,5 +1,6 @@
 ---
 tagName: nve-month
+added: 2026-09-28
 stars: 88
 description: A month picker is a control that enables users to choose a month value.
 category: Forms

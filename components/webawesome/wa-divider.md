@@ -1,5 +1,6 @@
 ---
 tagName: wa-divider
+added: 2026-09-28
 stars: 1348
 description: "Dividers visually separate or group adjacent elements with a horizontal or vertical line. Use them to establish rhythm and hierarchy within menus, toolbars, and layouts."
 category: Layout

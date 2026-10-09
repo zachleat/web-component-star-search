@@ -1,5 +1,6 @@
 ---
 tagName: slide-deck
+added: 2026-09-27
 stars: 40
 description: A Web Component for web presentations
 category: Content

@@ -1,5 +1,6 @@
 ---
 tagName: nve-checkbox
+added: 2026-09-28
 stars: 88
 description: "A checkbox is a control that enables users to choose between two distinct mutually exclusive options (checked or unchecked, on or off) through a single click or tap."
 category: Forms

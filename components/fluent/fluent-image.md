@@ -1,5 +1,6 @@
 ---
 tagName: fluent-image
+added: 2026-09-27
 stars: 20298
 description: The base class used for constucting a fluent image custom element
 category: Media

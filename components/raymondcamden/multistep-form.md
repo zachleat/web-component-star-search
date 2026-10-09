@@ -1,5 +1,6 @@
 ---
 tagName: multistep-form
+added: 2026-09-27
 description: Progressively enhances a long form into a multistep flow that still submits normally without JavaScript.
 category: Forms
 builtWith: Vanilla

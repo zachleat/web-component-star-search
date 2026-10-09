@@ -1,5 +1,6 @@
 ---
 tagName: fluent-counter-badge
+added: 2026-09-27
 stars: 20298
 description: A CounterBadge Custom HTML Element. Based on BaseCounterBadge and includes style and layout specific attributes.
 category: Feedback

@@ -1,5 +1,6 @@
 ---
 tagName: sl-icon-button
+added: 2026-09-27
 archived: true
 stars: 13834
 description: "Icons buttons are simple, icon-only buttons that can be used for actions and in toolbars."

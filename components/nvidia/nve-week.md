@@ -1,5 +1,6 @@
 ---
 tagName: nve-week
+added: 2026-09-28
 stars: 88
 description: A week picker is a control that enables users to choose a week value.
 category: Forms

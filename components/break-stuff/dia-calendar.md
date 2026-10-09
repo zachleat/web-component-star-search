@@ -1,5 +1,6 @@
 ---
 tagName: dia-calendar
+added: 2026-09-28
 stars: 10
 description: The calendar grid from Dia Date Picker, usable on its own.
 category: Forms

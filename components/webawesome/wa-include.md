@@ -1,5 +1,6 @@
 ---
 tagName: wa-include
+added: 2026-09-28
 stars: 1348
 description: "Fetches an external HTML file and embeds its contents inline on the page. Useful for reusing shared markup like headers, footers, and partials across multiple pages."
 category: Content

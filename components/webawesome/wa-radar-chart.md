@@ -1,5 +1,6 @@
 ---
 tagName: wa-radar-chart
+added: 2026-09-28
 description: Radar charts compare multiple variables at once by plotting data on a radial grid.
 category: Data
 builtWith: Lit

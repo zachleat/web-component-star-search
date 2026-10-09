@@ -1,5 +1,6 @@
 ---
 tagName: sl-details
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Details show a brief summary and expand to show additional content.

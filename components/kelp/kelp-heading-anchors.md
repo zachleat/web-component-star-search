@@ -1,5 +1,6 @@
 ---
 tagName: kelp-heading-anchors
+added: 2026-09-27
 stars: 645
 description: Adds anchor links to headings that have an ID.
 category: Navigation

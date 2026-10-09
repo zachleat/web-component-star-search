@@ -1,5 +1,6 @@
 ---
 tagName: table-sort
+added: 2026-09-27
 stars: 4
 description: Progressively enhances a wrapped table so users can click column headers to sort it.
 category: Data

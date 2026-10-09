@@ -1,5 +1,6 @@
 ---
 tagName: share-button
+added: 2026-09-27
 stars: 93
 description: A Web Component to share web pages using the native OS sharing options
 category: Actions

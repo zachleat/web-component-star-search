@@ -1,5 +1,6 @@
 ---
 tagName: nve-grid
+added: 2026-09-28
 stars: 88
 description: A versatile table/datagrid component with built-in keyboard navigation for displaying and interacting with structured data.
 category: Layout

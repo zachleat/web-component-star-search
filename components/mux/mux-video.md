@@ -1,5 +1,6 @@
 ---
 tagName: mux-video
+added: 2026-09-27
 stars: 364
 description: A custom mux video element for the browser that Just Works™
 category: Media

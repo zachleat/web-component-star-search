@@ -1,5 +1,6 @@
 ---
 tagName: fluent-menu-list
+added: 2026-09-27
 stars: 20298
 description: "A MenuList Custom HTML Element. Implements the | ARIA menu ."
 category: Navigation

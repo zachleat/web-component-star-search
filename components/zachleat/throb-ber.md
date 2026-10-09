@@ -1,5 +1,6 @@
 ---
 tagName: throb-ber
+added: 2026-09-27
 stars: 17
 description: Loading indicator overlay for images (and maybe other things later).
 category: Feedback

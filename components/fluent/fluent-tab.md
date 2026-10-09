@@ -1,5 +1,6 @@
 ---
 tagName: fluent-tab
+added: 2026-09-27
 stars: 20298
 description: Tab extends the FASTTab and is a child of the TabList
 category: Navigation

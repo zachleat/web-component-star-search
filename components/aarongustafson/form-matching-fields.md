@@ -1,5 +1,6 @@
 ---
 tagName: form-matching-fields
+added: 2026-09-27
 stars: 1
 description: Web component that automatically adds validation rules that ensure the values of descendent fields match.
 category: Forms

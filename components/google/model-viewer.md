@@ -1,5 +1,6 @@
 ---
 tagName: model-viewer
+added: 2026-09-28
 stars: 8260
 description: Easily display interactive 3D models on the web and in AR!
 category: Media

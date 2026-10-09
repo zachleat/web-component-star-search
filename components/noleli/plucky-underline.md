@@ -1,5 +1,6 @@
 ---
 tagName: plucky-underline
+added: 2026-09-27
 stars: 9
 description: An animated standing-wave underline for links.
 category: Effects

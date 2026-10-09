@@ -1,5 +1,6 @@
 ---
 tagName: scrollspy-nav
+added: 2026-09-28
 stars: 68
 description: Sticky page anchor navigation that highlights the section in view.
 category: Navigation

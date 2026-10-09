@@ -1,5 +1,6 @@
 ---
 tagName: dialog-image
+added: 2026-09-27
 description: Opens a larger version of a thumbnail image in a native dialog.
 category: Overlays
 builtWith: Vanilla

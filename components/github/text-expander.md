@@ -1,5 +1,6 @@
 ---
 tagName: text-expander
+added: 2026-09-27
 stars: 227
 description: Activates a suggestion menu to expand text snippets as you type.
 category: Forms

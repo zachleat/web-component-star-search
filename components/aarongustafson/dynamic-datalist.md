@@ -1,5 +1,6 @@
 ---
 tagName: dynamic-datalist
+added: 2026-09-27
 stars: 7
 description: "Web component that enables you to dynamically update a field’s `datalist` with values retrieved from a URL as the user types"
 category: Forms

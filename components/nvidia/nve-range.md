@@ -1,5 +1,6 @@
 ---
 tagName: nve-range
+added: 2026-09-28
 stars: 88
 description: A range slider is a control that enables users to choose a value from a continuous range of values.
 category: Forms

@@ -1,5 +1,6 @@
 ---
 tagName: nve-tag
+added: 2026-09-28
 stars: 88
 description: A interactive element that represents a category or group of content. Typically used to filter or organize content for one to many relations.
 category: Feedback

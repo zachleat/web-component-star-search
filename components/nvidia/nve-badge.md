@@ -1,5 +1,6 @@
 ---
 tagName: nve-badge
+added: 2026-09-28
 stars: 88
 description: "A visual indicator that communicates a status description of an associated component. Status badges use short text, color, built in icons for quick recognition and render near the relevant content."
 category: Feedback

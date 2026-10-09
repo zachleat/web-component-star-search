@@ -1,5 +1,6 @@
 ---
 tagName: print-button
+added: 2026-09-27
 stars: 3
 description: A print button web component that allows users to print specific content.
 category: Actions

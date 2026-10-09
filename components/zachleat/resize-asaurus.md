@@ -1,5 +1,6 @@
 ---
 tagName: resize-asaurus
+added: 2026-09-27
 stars: 34
 description: A web component to add resizing behavior to test intrinsically sized responsive components.
 category: Layout

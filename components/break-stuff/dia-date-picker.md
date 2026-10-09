@@ -1,5 +1,6 @@
 ---
 tagName: dia-date-picker
+added: 2026-09-28
 stars: 10
 description: An accessible date picker built with standards-based web components.
 category: Forms

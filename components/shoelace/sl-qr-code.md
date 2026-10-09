@@ -1,5 +1,6 @@
 ---
 tagName: sl-qr-code
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Generates a QR code and renders it using the Canvas API.

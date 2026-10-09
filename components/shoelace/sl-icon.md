@@ -1,5 +1,6 @@
 ---
 tagName: sl-icon
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Icons are symbols that can be used to represent various options within an application.

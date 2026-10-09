@@ -1,5 +1,6 @@
 ---
 tagName: nve-grid-row
+added: 2026-09-28
 stars: 88
 description: "Represents a horizontal row of data cells within a grid, supporting selection and interactive states."
 category: Layout

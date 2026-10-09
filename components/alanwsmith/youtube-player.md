@@ -1,5 +1,6 @@
 ---
 tagName: youtube-player
+added: 2026-09-28
 stars: 3
 description: A YouTube player with custom controls.
 category: Media

@@ -1,5 +1,6 @@
 ---
 tagName: filter-input
+added: 2026-09-27
 stars: 61
 description: Display elements in a subtree that match filter input text.
 category: Forms

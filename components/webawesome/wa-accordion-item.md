@@ -1,5 +1,6 @@
 ---
 tagName: wa-accordion-item
+added: 2026-09-28
 stars: 1348
 description: "Accordion items are used inside `<wa-accordion>` to create expandable sections with accessible headers."
 category: Layout

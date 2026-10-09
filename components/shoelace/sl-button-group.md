@@ -1,5 +1,6 @@
 ---
 tagName: sl-button-group
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Button groups can be used to group related buttons into sections.

@@ -1,5 +1,6 @@
 ---
 tagName: nve-dropzone
+added: 2026-09-28
 stars: 88
 description: A dropzone form control that enables users to drag and drop files onto it.
 category: Forms

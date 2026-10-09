@@ -1,5 +1,6 @@
 ---
 tagName: accordion-container
+added: 2026-09-27
 description: A generic Custom Element wrapper that turns some headings and other content into an accordion
 category: Layout
 builtWith: Vanilla

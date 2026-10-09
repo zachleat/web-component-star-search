@@ -1,5 +1,6 @@
 ---
 tagName: gmpx-icon-button
+added: 2026-09-27
 stars: 192
 description: Web Components for building rich experiences with the Google Maps JavaScript API.
 category: Media

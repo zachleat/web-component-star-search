@@ -1,5 +1,6 @@
 ---
 tagName: place-holder
+added: 2026-09-27
 stars: 7
 description: A simple web component that gives you a box with an X through it.
 category: Media

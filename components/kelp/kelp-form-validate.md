@@ -1,5 +1,6 @@
 ---
 tagName: kelp-form-validate
+added: 2026-09-27
 stars: 645
 description: "Enhances native form validation with accessible, inline error messages."
 category: Forms

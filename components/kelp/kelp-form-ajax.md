@@ -1,5 +1,6 @@
 ---
 tagName: kelp-form-ajax
+added: 2026-09-27
 stars: 645
 description: "Submits a form with Ajax and announces submitting, success, and error messages."
 category: Forms

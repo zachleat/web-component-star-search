@@ -1,5 +1,6 @@
 ---
 tagName: nve-date
+added: 2026-09-28
 stars: 88
 description: A date picker is a control that enables users to choose a date value.
 category: Data

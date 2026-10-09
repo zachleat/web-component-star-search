@@ -1,5 +1,6 @@
 ---
 tagName: nve-dropdown-header
+added: 2026-09-28
 stars: 88
 description: Displays a title or contextual label at the top of a dropdown menu to categorize its contents.
 category: Overlays

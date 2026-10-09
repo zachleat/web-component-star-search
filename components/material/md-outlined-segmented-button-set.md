@@ -1,5 +1,6 @@
 ---
 tagName: md-outlined-segmented-button-set
+added: 2026-09-27
 stars: 11283
 description: MdOutlinedSegmentedButtonSet is the custom element for the Material Design outlined segmented button set component.
 category: Forms

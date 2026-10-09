@@ -1,5 +1,6 @@
 ---
 tagName: sl-split-panel
+added: 2026-09-27
 archived: true
 stars: 13834
 description: "Split panels display two adjacent panels, allowing the user to reposition them."

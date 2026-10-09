@@ -1,5 +1,6 @@
 ---
 tagName: playground-file-system-controls
+added: 2026-09-27
 stars: 648
 description: Serverless coding environments for the web
 category: Forms

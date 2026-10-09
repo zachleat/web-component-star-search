@@ -145,6 +145,9 @@ export default function (eleventyConfig) {
 		return `${Math.floor(days / 365)}y`;
 	});
 
+	// YAML dates become Date objects; keep them as YYYY-MM-DD.
+	eleventyConfig.addFilter("isoDate", (value) => new Date(value).toISOString().slice(0, 10));
+
 	eleventyConfig.addFilter("number", (value) => new Intl.NumberFormat("en-US").format(value));
 
 	eleventyConfig.addFilter("npmUrl", (name) => `https://www.npmjs.com/package/${name}`);

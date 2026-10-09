@@ -1,5 +1,6 @@
 ---
 tagName: wa-scroller
+added: 2026-09-28
 stars: 1348
 description: Scrollers wrap overflowing content in an accessible container with visual cues that help users recognize and navigate scrollable regions.
 category: Layout

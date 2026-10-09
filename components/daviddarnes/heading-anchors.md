@@ -1,5 +1,6 @@
 ---
 tagName: heading-anchors
+added: 2026-09-27
 stars: 31
 description: A Web Component to add anchor links to headings with IDs
 category: Content

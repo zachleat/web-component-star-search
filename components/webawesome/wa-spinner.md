@@ -1,5 +1,6 @@
 ---
 tagName: wa-spinner
+added: 2026-09-28
 stars: 1348
 description: "Spinners indicate that an operation is in progress when the duration is unknown. Use them for loading states where a determinate progress bar isn't practical."
 category: Feedback

@@ -1,5 +1,6 @@
 ---
 tagName: password-rules
+added: 2026-09-28
 stars: 14
 description: Checks a password input against a list of rules as the user types.
 category: Forms

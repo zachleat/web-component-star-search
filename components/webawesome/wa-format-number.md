@@ -1,5 +1,6 @@
 ---
 tagName: wa-format-number
+added: 2026-09-28
 stars: 1348
 description: "Formats a number for display using the specified locale and options, including currency, percent, and unit styles. Powered by the Intl.NumberFormat API."
 category: Data

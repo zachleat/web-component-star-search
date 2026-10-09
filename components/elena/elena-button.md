@@ -1,5 +1,6 @@
 ---
 tagName: elena-button
+added: 2026-09-27
 stars: 192
 description: Button component is used for interface actions.
 category: Actions

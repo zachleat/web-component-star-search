@@ -1,5 +1,6 @@
 ---
 tagName: local-time
+added: 2026-09-28
 deprecated: "Please use @github/relative-time-element insteadd"
 stars: 4036
 description: Formats a timestamp as a localized date and time.

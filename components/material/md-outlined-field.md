@@ -1,5 +1,6 @@
 ---
 tagName: md-outlined-field
+added: 2026-09-27
 stars: 11283
 description: "TODO(b/228525797): add docs"
 category: Forms

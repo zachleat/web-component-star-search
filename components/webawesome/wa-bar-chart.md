@@ -1,5 +1,6 @@
 ---
 tagName: wa-bar-chart
+added: 2026-09-28
 description: Bar charts compare quantities across categories using rectangular bars.
 category: Data
 builtWith: Lit

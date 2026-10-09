@@ -1,5 +1,6 @@
 ---
 tagName: nve-toggletip-footer
+added: 2026-09-28
 stars: 88
 description: Provides a designated area at the bottom of a toggletip for actions or supplementary information.
 category: Navigation

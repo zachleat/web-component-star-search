@@ -1,5 +1,6 @@
 ---
 tagName: nve-textarea
+added: 2026-09-28
 stars: 88
 description: A textarea is a control that enables users to enter and edit text.
 category: Forms

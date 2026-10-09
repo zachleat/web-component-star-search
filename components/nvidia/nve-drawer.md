@@ -1,5 +1,6 @@
 ---
 tagName: nve-drawer
+added: 2026-09-28
 stars: 88
 description: "A drawer displays content separate from the rest of the page, such as notifications, navigation, and settings."
 category: Overlays

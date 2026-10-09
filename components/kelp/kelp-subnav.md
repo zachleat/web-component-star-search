@@ -1,5 +1,6 @@
 ---
 tagName: kelp-subnav
+added: 2026-09-27
 stars: 645
 description: Enhances navigation submenus so they close on outside clicks and the escape key.
 category: Navigation

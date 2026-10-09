@@ -1,5 +1,6 @@
 ---
 tagName: sl-radio-group
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Radio groups are used to group multiple radios or radio buttons so they function as a single form control.

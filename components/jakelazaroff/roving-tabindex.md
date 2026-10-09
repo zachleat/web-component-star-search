@@ -1,5 +1,6 @@
 ---
 tagName: roving-tabindex
+added: 2026-09-28
 stars: 42
 description: A simple HTML web component that implements the roving tabindex pattern for building accessible menus and grids.
 category: Navigation

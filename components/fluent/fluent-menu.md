@@ -1,5 +1,6 @@
 ---
 tagName: fluent-menu
+added: 2026-09-27
 stars: 20298
 description: The Menu component functions as a customizable menu element.
 category: Navigation

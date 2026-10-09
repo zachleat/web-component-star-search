@@ -1,5 +1,6 @@
 ---
 tagName: details-dialog
+added: 2026-09-27
 archived: true
 stars: 762
 description: A modal dialog opened with a <details> button.

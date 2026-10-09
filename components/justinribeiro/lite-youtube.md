@@ -1,5 +1,6 @@
 ---
 tagName: lite-youtube
+added: 2026-09-27
 stars: 1371
 description: "A web component that loads YouTube embed iframes faster. ShadowDom based version of Paul Irish' concept."
 category: Media

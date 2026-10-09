@@ -1,5 +1,6 @@
 ---
 tagName: random-source
+added: 2026-09-27
 stars: 8
 description: A Web Component to randomly change audio or video sources
 category: Effects

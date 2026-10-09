@@ -1,5 +1,6 @@
 ---
 tagName: fluent-button
+added: 2026-09-27
 stars: 20298
 description: A Button Custom HTML Element. Based on BaseButton and includes style and layout specific attributes
 category: Actions

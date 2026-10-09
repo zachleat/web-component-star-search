@@ -1,5 +1,6 @@
 ---
 tagName: nve-viewport-gridlines
+added: 2026-09-28
 stars: 88
 description: "Renders origin-stable, zoom-adaptive gridlines behind viewport content."
 category: Content

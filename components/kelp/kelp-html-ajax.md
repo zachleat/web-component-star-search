@@ -1,5 +1,6 @@
 ---
 tagName: kelp-html-ajax
+added: 2026-09-27
 stars: 645
 description: Updates HTML on the page with fresh content from the server in response to events.
 category: Content

@@ -1,5 +1,6 @@
 ---
 tagName: fluent-dialog-body
+added: 2026-09-27
 stars: 20298
 description: Dialog Body component that extends the FASTElement class.
 category: Overlays

@@ -1,5 +1,6 @@
 ---
 tagName: nve-sort-button
+added: 2026-09-28
 stars: 88
 description: A sort button is a control that enables users to sort a list of items in ascending or descending order.
 category: Actions

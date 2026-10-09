@@ -1,5 +1,6 @@
 ---
 tagName: actor-typeahead
+added: 2026-09-28
 description: Progressively enhances an input into an autocomplete for ATProto (Bluesky) handles.
 category: Forms
 builtWith: Vanilla

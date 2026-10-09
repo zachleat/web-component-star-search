@@ -1,5 +1,6 @@
 ---
 tagName: nve-breadcrumb
+added: 2026-09-28
 stars: 88
 description: Breadcrumb is a component that can help users establish their location while navigating a website with complex URLs and navigation paths.
 category: Navigation

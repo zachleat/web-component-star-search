@@ -1,5 +1,6 @@
 ---
 tagName: wa-tree-item
+added: 2026-09-28
 stars: 1348
 description: "Tree items represent a single hierarchical node inside a tree, and can contain nested items that expand and collapse."
 category: Navigation

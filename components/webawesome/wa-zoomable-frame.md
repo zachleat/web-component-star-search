@@ -1,5 +1,6 @@
 ---
 tagName: wa-zoomable-frame
+added: 2026-09-28
 stars: 1348
 description: "Zoomable frames embed iframe content with built-in controls for zooming, panning, and managing interaction."
 category: Layout

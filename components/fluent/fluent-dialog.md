@@ -1,5 +1,6 @@
 ---
 tagName: fluent-dialog
+added: 2026-09-27
 stars: 20298
 description: A Dialog Custom HTML Element.
 category: Overlays

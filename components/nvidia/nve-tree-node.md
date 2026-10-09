@@ -1,5 +1,6 @@
 ---
 tagName: nve-tree-node
+added: 2026-09-28
 stars: 88
 description: "A tree view widget presents a hierarchical list. Any item in the hierarchy may have child items, and items that have children can expand or collapse to show or hide the children."
 category: Navigation

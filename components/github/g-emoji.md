@@ -1,5 +1,6 @@
 ---
 tagName: g-emoji
+added: 2026-09-27
 stars: 144
 description: "Backports native emoji characters to browsers that don't support them by replacing the characters with fallback images."
 category: Media

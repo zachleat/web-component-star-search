@@ -1,5 +1,6 @@
 ---
 tagName: icon-fall
+added: 2026-09-27
 stars: 6
 description: A web component to rain Font Awesome icons down your web site.
 category: Media

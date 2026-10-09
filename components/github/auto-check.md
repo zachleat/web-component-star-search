@@ -1,5 +1,6 @@
 ---
 tagName: auto-check
+added: 2026-09-27
 stars: 188
 description: An input element that validates its value with a server endpoint.
 category: Forms

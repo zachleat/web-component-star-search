@@ -1,5 +1,6 @@
 ---
 tagName: form-obfuscator
+added: 2026-09-27
 stars: 8
 description: Web component that obfuscates fields when they don’t have focus.
 category: Forms

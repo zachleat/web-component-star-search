@@ -1,5 +1,6 @@
 ---
 tagName: fluent-message-bar
+added: 2026-09-27
 stars: 20298
 description: A Message Bar Custom HTML Element.
 category: Feedback

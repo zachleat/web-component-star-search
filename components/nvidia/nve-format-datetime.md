@@ -1,5 +1,6 @@
 ---
 tagName: nve-format-datetime
+added: 2026-09-28
 stars: 88
 description: Formats a date/time value as localized text using the Intl.DateTimeFormat API.
 category: Data

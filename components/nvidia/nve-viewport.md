@@ -1,5 +1,6 @@
 ---
 tagName: nve-viewport
+added: 2026-09-28
 stars: 88
 description: "A viewport provides a spatial surface for arbitrary content, with optional pan and zoom navigation."
 category: Content

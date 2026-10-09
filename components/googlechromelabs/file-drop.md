@@ -1,5 +1,6 @@
 ---
 tagName: file-drop
+added: 2026-09-27
 stars: 234
 description: File Drop Custom Element
 category: Forms

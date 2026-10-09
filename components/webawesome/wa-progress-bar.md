@@ -1,5 +1,6 @@
 ---
 tagName: wa-progress-bar
+added: 2026-09-28
 stars: 1348
 description: "Progress bars show how far along an ongoing operation is as a horizontal fill. Use them for file uploads, multi-step flows, or any task with measurable progress."
 category: Feedback

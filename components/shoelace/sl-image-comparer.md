@@ -1,5 +1,6 @@
 ---
 tagName: sl-image-comparer
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Compare visual differences between similar photos with a sliding panel.

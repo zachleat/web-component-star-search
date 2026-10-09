@@ -1,5 +1,6 @@
 ---
 tagName: md-slider
+added: 2026-09-27
 stars: 11283
 description: Sliders allow users to view and select a value (or range) along a track.
 category: Forms

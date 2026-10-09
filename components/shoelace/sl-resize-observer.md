@@ -1,5 +1,6 @@
 ---
 tagName: sl-resize-observer
+added: 2026-09-27
 archived: true
 stars: 13834
 description: "The Resize Observer component offers a thin, declarative interface to the `ResizeObserver API`."

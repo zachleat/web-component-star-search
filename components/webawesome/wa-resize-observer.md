@@ -1,5 +1,6 @@
 ---
 tagName: wa-resize-observer
+added: 2026-09-28
 stars: 1348
 description: "Resize observers watch their slotted elements for size changes and emit an event when they occur. Provides a thin, declarative interface to the browser's ResizeObserver API."
 category: Layout

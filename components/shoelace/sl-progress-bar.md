@@ -1,5 +1,6 @@
 ---
 tagName: sl-progress-bar
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Progress bars are used to show the status of an ongoing operation.

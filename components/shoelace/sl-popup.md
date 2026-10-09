@@ -1,5 +1,6 @@
 ---
 tagName: sl-popup
+added: 2026-09-27
 archived: true
 stars: 13834
 description: "Popup is a utility that lets you declaratively anchor \"popup\" containers to another element."

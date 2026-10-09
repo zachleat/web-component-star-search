@@ -1,5 +1,6 @@
 ---
 tagName: no-spoilers
+added: 2026-09-27
 description: Webcomponent no-spoilers following open-wc recommendations
 category: Content
 builtWith: Vanilla

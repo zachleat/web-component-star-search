@@ -1,5 +1,6 @@
 ---
 tagName: live-filter
+added: 2026-09-27
 stars: 18
 description: A Web Component for filtering items using a text input
 category: Feedback

@@ -1,5 +1,6 @@
 ---
 tagName: webcare-webshare
+added: 2026-09-27
 stars: 26
 description: "Web component to use the Web Share API, with a fallback to copy to the clipboard."
 category: Actions

@@ -1,5 +1,6 @@
 ---
 tagName: nve-viewport-minimap
+added: 2026-10-08
 description: Provides a simplified overview and direct navigation for its parent viewport.
 category: Navigation
 builtWith: Lit

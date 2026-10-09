@@ -1,5 +1,6 @@
 ---
 tagName: wa-accordion
+added: 2026-09-28
 stars: 1348
 description: "Accordions are a vertically stacked set of interactive headings that each contain a title, representing a section of content."
 category: Layout

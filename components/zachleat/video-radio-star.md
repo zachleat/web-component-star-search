@@ -1,5 +1,6 @@
 ---
 tagName: video-radio-star
+added: 2026-09-27
 stars: 73
 description: "Video helper web component. Intended for use with `muted` by default HTML5 videos."
 category: Media

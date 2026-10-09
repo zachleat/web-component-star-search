@@ -1,5 +1,6 @@
 ---
 tagName: wa-radio
+added: 2026-09-28
 stars: 1348
 description: Radios represent a single option within a mutually exclusive set. Use them inside a radio group when users must pick exactly one choice from a small list.
 category: Forms

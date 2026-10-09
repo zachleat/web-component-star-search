@@ -1,5 +1,6 @@
 ---
 tagName: w3c-banner
+added: 2026-09-27
 stars: 9
 description: A W3C Specification banner web component.
 category: Content

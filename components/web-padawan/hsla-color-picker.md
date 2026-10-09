@@ -1,5 +1,6 @@
 ---
 tagName: hsla-color-picker
+added: 2026-09-27
 stars: 854
 description: A color picker custom element that uses HSLA object format.
 category: Forms

@@ -1,5 +1,6 @@
 ---
 tagName: sl-animated-image
+added: 2026-09-27
 archived: true
 stars: 13834
 description: A component for displaying animated GIFs and WEBPs that play and pause on interaction.

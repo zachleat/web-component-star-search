@@ -1,5 +1,6 @@
 ---
 tagName: sl-carousel-item
+added: 2026-09-27
 archived: true
 stars: 13834
 description: A carousel item represent a slide within a carousel.

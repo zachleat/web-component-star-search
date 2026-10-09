@@ -1,5 +1,6 @@
 ---
 tagName: md-select-option
+added: 2026-09-27
 stars: 11283
 description: Select menus display a list of choices on temporary surfaces and display the currently selected menu item above the menu.
 category: Forms

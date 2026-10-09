@@ -1,5 +1,6 @@
 ---
 tagName: pinch-zoom
+added: 2026-09-27
 stars: 392
 description: "Put stuff in an element, now you can pinch-zoom it!"
 category: Media

@@ -1,5 +1,6 @@
 ---
 tagName: wa-sparkline
+added: 2026-09-28
 description: "Sparklines display inline data trends as compact, visual charts."
 category: Data
 builtWith: Lit

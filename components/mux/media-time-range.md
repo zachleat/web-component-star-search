@@ -1,5 +1,6 @@
 ---
 tagName: media-time-range
+added: 2026-09-27
 stars: 2751
 description: Custom elements (web components) for making audio and video player controls that look great in your website or app.
 category: Media

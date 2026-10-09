@@ -1,5 +1,6 @@
 ---
 tagName: code-bubble
+added: 2026-09-28
 stars: 11
 description: Shows code examples with links to open them in a StackBlitz sandbox.
 category: Content

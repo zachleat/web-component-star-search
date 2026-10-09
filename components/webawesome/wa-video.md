@@ -1,5 +1,6 @@
 ---
 tagName: wa-video
+added: 2026-09-28
 description: Videos are used to embed and play video content with custom controls and captions.
 category: Media
 builtWith: Lit

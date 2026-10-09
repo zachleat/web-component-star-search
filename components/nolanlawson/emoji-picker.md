@@ -1,5 +1,6 @@
 ---
 tagName: emoji-picker
+added: 2026-09-27
 stars: 1757
 description: Lightweight emoji picker distributed as a web component
 category: Media

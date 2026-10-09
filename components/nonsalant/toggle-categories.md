@@ -1,5 +1,6 @@
 ---
 tagName: toggle-categories
+added: 2026-09-27
 description: Toggles which categories of items are shown using a group of checkboxes.
 category: Forms
 builtWith: Vanilla

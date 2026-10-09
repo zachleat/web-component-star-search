@@ -1,5 +1,6 @@
 ---
 tagName: wa-data-grid
+added: 2026-09-28
 description: "Data grids display tabular data with sorting, selection, filtering, pinning, tree data, grouping with aggregation, column footers, expandable rows, pagination, CSV export, full keyboard navigation, and virtualization for large datasets."
 category: Data
 builtWith: Lit

@@ -1,5 +1,6 @@
 ---
 tagName: fluent-tooltip
+added: 2026-09-27
 stars: 20298
 description: "A Tooltip Custom HTML Element. Based on ARIA APG Tooltip Pattern."
 category: Overlays

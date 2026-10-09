@@ -1,5 +1,6 @@
 ---
 tagName: sl-tree
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Trees allow you to display a hierarchical list of selectable tree items. Items with children can be expanded and collapsed as desired by the user.

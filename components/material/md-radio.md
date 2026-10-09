@@ -1,5 +1,6 @@
 ---
 tagName: md-radio
+added: 2026-09-27
 stars: 11283
 description: Radio buttons allow users to select one option from a set.
 category: Forms

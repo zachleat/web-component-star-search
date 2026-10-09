@@ -1,5 +1,6 @@
 ---
 tagName: wa-tooltip
+added: 2026-09-28
 stars: 1348
 description: "Tooltips display brief contextual information when the user hovers, focuses, or taps a target element."
 category: Overlays

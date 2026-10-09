@@ -1,5 +1,6 @@
 ---
 tagName: nve-page-panel-footer
+added: 2026-09-28
 stars: 88
 description: Provides a fixed action area at the bottom of a page panel for persistent controls or status information.
 category: Layout

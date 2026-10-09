@@ -1,5 +1,6 @@
 ---
 tagName: speedlify2-score
+added: 2026-09-27
 stars: 25
 description: "A zero-dependency web component showing Lighthouse scores for a URL, published by a speedlify2 instance."
 category: Feedback

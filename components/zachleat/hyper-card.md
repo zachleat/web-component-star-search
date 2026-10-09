@@ -1,5 +1,6 @@
 ---
 tagName: hyper-card
+added: 2026-09-27
 stars: 71
 description: Web component to add a three-dimensional hover effect to a card.
 category: Effects

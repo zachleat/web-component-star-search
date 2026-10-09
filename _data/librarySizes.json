@@ -25,5 +25,20 @@
 	},
 	"NVIDIA Elements": {
 		"jsSize": 11808
+	},
+	"Vaadin": {
+		"jsSize": 19893
+	},
+	"PatternFly Elements": {
+		"jsSize": 6333
+	},
+	"Spectrum Web Components": {
+		"jsSize": 7471
+	},
+	"Weightless": {
+		"jsSize": 8028
+	},
+	"Wired Elements": {
+		"jsSize": 14123
 	}
 }

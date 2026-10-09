@@ -1,5 +1,6 @@
 ---
 tagName: include-fragment
+added: 2026-09-27
 stars: 569
 description: A Client Side Includes tag.
 category: Content

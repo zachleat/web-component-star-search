@@ -1,5 +1,6 @@
 ---
 tagName: nve-page-panel
+added: 2026-09-28
 stars: 88
 description: Child panel for embedded panels within the page component. Typically used for left/right/bottom page slot positions.
 category: Layout

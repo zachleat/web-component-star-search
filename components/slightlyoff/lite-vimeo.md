@@ -1,5 +1,6 @@
 ---
 tagName: lite-vimeo
+added: 2026-09-27
 stars: 83
 description: "A web component that loads Vimeo embed iframes faster. ShadowDom based version of Paul Irish' concept."
 category: Media

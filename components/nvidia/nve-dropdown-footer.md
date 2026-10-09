@@ -1,5 +1,6 @@
 ---
 tagName: nve-dropdown-footer
+added: 2026-09-28
 stars: 88
 description: Provides a fixed area at the bottom of a dropdown menu for extra actions or supplementary controls.
 category: Overlays

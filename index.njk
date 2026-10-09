@@ -79,6 +79,7 @@ layout: layouts/base.njk
 				<option value="size-asc">Size (smallest first)</option>
 				<option value="size-desc">Size (largest first)</option>
 				<option value="published">Newest publish</option>
+				<option value="added">Recently added</option>
 			</select>
 		</label>
 		</div>
@@ -99,7 +100,7 @@ layout: layouts/base.njk
 		{%- endif %}
 	{%- endif %}
 	{%- set stats = false if (entry.data.archived or entry.data.deprecated or entry.data.supersededBy) else ((downloads[entry.data.package] if entry.data.package) | popularity(entry.data.stars)) %}
-	<li data-url="{{ entry.url }}" data-category="{{ entry.data.category }}" data-source="{{ entry.data.source }}" data-built-with="{{ entry.data.builtWith }}"{% if entry.data.jsSize %} data-size="{{ entry.data.jsSize + (entry.data.cssSize or 0) }}"{% endif %}{% if stats %} data-popular="{{ stats.value }}"{% endif %}{% if changedDate %} data-published="{{ changedDate }}"{% endif %}{% if entry.data.demo %} data-demo{% endif %}{% if entry.data.package %} data-npm{% endif %}{% if not (entry.data.author in organizations) %} data-indie{% endif %}>
+	<li data-url="{{ entry.url }}" data-category="{{ entry.data.category }}" data-source="{{ entry.data.source }}" data-built-with="{{ entry.data.builtWith }}"{% if entry.data.jsSize %} data-size="{{ entry.data.jsSize + (entry.data.cssSize or 0) }}"{% endif %}{% if stats %} data-popular="{{ stats.value }}"{% endif %}{% if changedDate %} data-published="{{ changedDate }}"{% endif %}{% if entry.data.added %} data-added="{{ entry.data.added | isoDate }}"{% endif %}{% if entry.data.demo %} data-demo{% endif %}{% if entry.data.package %} data-npm{% endif %}{% if not (entry.data.author in organizations) %} data-indie{% endif %}>
 		{%- set retired = entry.data.deprecated or entry.data.archived %}
 		<a href="{{ entry.url }}">{% if retired %}<del>{% endif %}<code>&lt;{{ entry.data.tagName }}&gt;</code>{% if retired %}</del>{% endif %}</a>
 		{%- set release = published[entry.data.package] if entry.data.package %}

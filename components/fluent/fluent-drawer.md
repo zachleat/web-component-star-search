@@ -1,5 +1,6 @@
 ---
 tagName: fluent-drawer
+added: 2026-09-27
 stars: 20298
 description: A component that provides a drawer for displaying content in a side panel.
 category: Overlays

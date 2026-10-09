@@ -1,5 +1,6 @@
 ---
 tagName: nve-card-footer
+added: 2026-09-28
 stars: 88
 description: "Provides a designated area at the bottom of a card for actions, metadata, or supplementary information."
 category: Layout

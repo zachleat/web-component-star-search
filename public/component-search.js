@@ -83,9 +83,9 @@ class ComponentSearch extends HTMLElement {
 
 	// Reorders the cards (most popular by default); items without a value sort last, and ties keep name order.
 	sort(order) {
-		let key = order?.startsWith("size") ? "size" : order === "published" ? order : order === "name" ? undefined : "popular";
+		let key = order?.startsWith("size") ? "size" : ["published", "added"].includes(order) ? order : order === "name" ? undefined : "popular";
 		let direction = order === "size-asc" ? 1 : -1;
-		let toNumber = (value) => key === "published" ? Date.parse(value) : Number(value);
+		let toNumber = (value) => ["published", "added"].includes(key) ? Date.parse(value) : Number(value);
 		let sorted = this.items.map((item, index) => ({ item, index, value: key ? toNumber(item.dataset[key]) : NaN }));
 		sorted.sort((a, b) => {
 			if (!key || (Number.isNaN(a.value) && Number.isNaN(b.value))) {

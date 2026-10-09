@@ -1,5 +1,6 @@
 ---
 tagName: duration-property
+added: 2026-09-27
 stars: 13
 description: "A Web Component to surface an audio or video's duration as a CSS Custom Property"
 category: Media

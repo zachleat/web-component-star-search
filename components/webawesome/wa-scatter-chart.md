@@ -1,5 +1,6 @@
 ---
 tagName: wa-scatter-chart
+added: 2026-09-28
 description: Scatter charts reveal relationships between two variables by plotting data points on a grid.
 category: Data
 builtWith: Lit

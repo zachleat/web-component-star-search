@@ -1,5 +1,6 @@
 ---
 tagName: nve-input-group
+added: 2026-09-28
 stars: 88
 description: Visually combines many related input controls into a unified composite field with shared styling.
 category: Forms

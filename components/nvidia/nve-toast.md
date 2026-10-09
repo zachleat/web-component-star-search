@@ -1,5 +1,6 @@
 ---
 tagName: nve-toast
+added: 2026-09-28
 stars: 88
 description: "A contextual popup that displays a status. Toasts are triggered by clicking, focusing, or tapping an element and cannot have interactive elements within them."
 category: Overlays

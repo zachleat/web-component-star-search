@@ -1,5 +1,6 @@
 ---
 tagName: wa-line-chart
+added: 2026-09-28
 description: Line charts show trends over time by connecting data points with line segments.
 category: Data
 builtWith: Lit

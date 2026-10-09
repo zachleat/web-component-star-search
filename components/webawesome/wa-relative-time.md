@@ -1,5 +1,6 @@
 ---
 tagName: wa-relative-time
+added: 2026-09-28
 stars: 1348
 description: "Relative times display a date as a localized phrase relative to now, such as \"3 hours ago\" or \"in 2 days\". The phrase updates automatically as time passes and respects the user's locale."
 category: Data

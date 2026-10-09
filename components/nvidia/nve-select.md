@@ -1,5 +1,6 @@
 ---
 tagName: nve-select
+added: 2026-09-28
 stars: 88
 description: A select is a control that enables users to select an option from a list of options.
 category: Forms

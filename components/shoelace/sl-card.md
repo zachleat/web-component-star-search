@@ -1,5 +1,6 @@
 ---
 tagName: sl-card
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Cards can be used to group related subjects in a container.

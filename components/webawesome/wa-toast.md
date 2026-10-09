@@ -1,5 +1,6 @@
 ---
 tagName: wa-toast
+added: 2026-09-28
 stars: 1348
 description: "Toasts display brief, non-blocking notifications that appear temporarily above the page content."
 category: Overlays

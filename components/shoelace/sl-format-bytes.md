@@ -1,5 +1,6 @@
 ---
 tagName: sl-format-bytes
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Formats a number as a human readable bytes value.

@@ -1,5 +1,6 @@
 ---
 tagName: wa-tag
+added: 2026-09-28
 stars: 1348
 description: "Tags label, categorize, or represent selections with a compact visual marker. Use them for status indicators, filters, or removable chips."
 category: Feedback

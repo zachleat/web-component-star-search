@@ -1,5 +1,6 @@
 ---
 tagName: form-required-checkboxes
+added: 2026-09-27
 stars: 9
 description: Web component that enables requirement rules for checkbox groups.
 category: Forms

@@ -1,5 +1,6 @@
 ---
 tagName: squirm-inal
+added: 2026-09-27
 stars: 38
 description: Squirminal incrementally reveals text inside any arbitrary DOM element structure.
 category: Effects

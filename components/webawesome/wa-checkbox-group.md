@@ -1,5 +1,6 @@
 ---
 tagName: wa-checkbox-group
+added: 2026-09-28
 stars: 1348
 description: "Checkbox groups wrap a set of related checkboxes or switches so they share a label, hint, and grouping semantics."
 category: Forms

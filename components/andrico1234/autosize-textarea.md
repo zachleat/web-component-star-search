@@ -1,5 +1,6 @@
 ---
 tagName: autosize-textarea
+added: 2026-09-27
 description: "!The autosize-textarea component in action"
 category: Forms
 builtWith: Vanilla

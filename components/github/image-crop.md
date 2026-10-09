@@ -1,5 +1,6 @@
 ---
 tagName: image-crop
+added: 2026-09-27
 stars: 198
 description: Select area for cropping an image. This does not actually crop.
 category: Media

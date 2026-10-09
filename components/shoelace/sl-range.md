@@ -1,5 +1,6 @@
 ---
 tagName: sl-range
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Ranges allow the user to select a single value within a given range using a slider.

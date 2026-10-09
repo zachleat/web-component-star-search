@@ -1,5 +1,6 @@
 ---
 tagName: wa-tab
+added: 2026-09-28
 stars: 1348
 description: Tabs label and activate an individual panel inside a tab group.
 category: Navigation

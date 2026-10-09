@@ -1,5 +1,6 @@
 ---
 tagName: form-required-if
+added: 2026-09-27
 stars: 11
 description: Web component that enables fields to be required based on the value(s) of other fields.
 category: Forms

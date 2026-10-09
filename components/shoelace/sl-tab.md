@@ -1,5 +1,6 @@
 ---
 tagName: sl-tab
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Tabs are used inside tab groups to represent and activate tab panels.

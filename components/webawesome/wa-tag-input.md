@@ -1,5 +1,6 @@
 ---
 tagName: wa-tag-input
+added: 2026-09-28
 stars: 1348
 description: "Tag inputs collect a list of short values, such as keywords, email addresses, or labels, as removable tags."
 category: Forms

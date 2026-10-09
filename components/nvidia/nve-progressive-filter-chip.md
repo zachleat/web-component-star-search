@@ -1,5 +1,6 @@
 ---
 tagName: nve-progressive-filter-chip
+added: 2026-09-28
 stars: 88
 description: A filter chip is a control that enables users to select many options from a set of choices.
 category: Forms

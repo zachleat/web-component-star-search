@@ -1,5 +1,6 @@
 ---
 tagName: md-tabs
+added: 2026-09-27
 stars: 11283
 description: Tabs displays a list of selectable tabs.
 category: Navigation

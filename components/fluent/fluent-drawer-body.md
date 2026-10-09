@@ -1,5 +1,6 @@
 ---
 tagName: fluent-drawer-body
+added: 2026-09-27
 stars: 20298
 description: A component that provides a drawer body for displaying content in a side panel.
 category: Overlays

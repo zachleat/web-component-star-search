@@ -1,5 +1,6 @@
 ---
 tagName: wa-mutation-observer
+added: 2026-09-28
 stars: 1348
 description: "Mutation observers watch for changes to an element's DOM tree and emit an event when they occur. Provides a thin, declarative interface to the browser's MutationObserver API."
 category: Utilities

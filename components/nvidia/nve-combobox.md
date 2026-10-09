@@ -1,5 +1,6 @@
 ---
 tagName: nve-combobox
+added: 2026-09-28
 stars: 88
 description: An editable combobox with autocomplete behavior and selection support.
 category: Forms

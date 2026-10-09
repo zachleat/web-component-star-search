@@ -1,5 +1,6 @@
 ---
 tagName: line-numbers
+added: 2026-09-27
 stars: 161
 description: A web component to add line numbers next to various HTML elements.
 category: Content

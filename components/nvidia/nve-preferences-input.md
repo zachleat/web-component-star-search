@@ -1,5 +1,6 @@
 ---
 tagName: nve-preferences-input
+added: 2026-09-28
 stars: 88
 description: "A preferences input is a widget for controlling apperance. Stylesheets register to the preferences input by including a css-property, see Standard for an example."
 category: Forms

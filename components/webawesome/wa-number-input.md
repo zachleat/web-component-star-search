@@ -1,5 +1,6 @@
 ---
 tagName: wa-number-input
+added: 2026-09-28
 stars: 1348
 description: "Number inputs let users enter and edit numeric values, with optional stepper buttons for incrementing and decrementing. Use them for quantities, measurements, and other numeric form fields."
 category: Forms

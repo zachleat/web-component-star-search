@@ -1,5 +1,6 @@
 ---
 tagName: nve-card-content
+added: 2026-09-28
 stars: 88
 description: "Contains the primary body content of a card, providing a structured region for the main information or media."
 category: Layout

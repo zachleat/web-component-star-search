@@ -1,5 +1,6 @@
 ---
 tagName: announcement-banner
+added: 2026-09-27
 stars: 50
 description: A reusable announcement bar banner component.
 category: Feedback

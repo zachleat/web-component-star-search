@@ -1,5 +1,6 @@
 ---
 tagName: sl-menu-label
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Menu labels are used to describe a group of menu items.

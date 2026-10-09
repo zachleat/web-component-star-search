@@ -1,5 +1,6 @@
 ---
 tagName: fluent-text-input
+added: 2026-09-27
 stars: 20298
 description: A Text Input Custom HTML Element. Based on BaseTextInput and includes style and layout specific attributes
 category: Content

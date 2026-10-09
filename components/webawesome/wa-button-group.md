@@ -1,5 +1,6 @@
 ---
 tagName: wa-button-group
+added: 2026-09-28
 stars: 1348
 description: "Button groups combine related buttons into a single visual unit. Use them for toolbars, segmented controls, or any set of actions that belong together."
 category: Actions

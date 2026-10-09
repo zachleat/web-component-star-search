@@ -1,5 +1,6 @@
 ---
 tagName: wa-option
+added: 2026-09-28
 stars: 1348
 description: Options represent the individual choices inside a select or similar form control. Each option holds a value and the label shown to the user.
 category: Forms

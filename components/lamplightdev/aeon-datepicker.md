@@ -1,5 +1,6 @@
 ---
 tagName: aeon-datepicker
+added: 2026-09-27
 stars: 311
 description: A date time picker web component
 category: Data

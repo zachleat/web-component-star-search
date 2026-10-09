@@ -1,5 +1,6 @@
 ---
 tagName: pwa-install
+added: 2026-09-27
 description: "!CI"
 category: Utilities
 builtWith: Lit

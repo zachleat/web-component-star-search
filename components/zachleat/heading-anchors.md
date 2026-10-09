@@ -1,5 +1,6 @@
 ---
 tagName: heading-anchors
+added: 2026-09-27
 stars: 42
 description: "Adds and positions sibling anchor links for heading elements (h1,h2,h3,h4,h5,h6) when they have an `id` attribute."
 category: Navigation

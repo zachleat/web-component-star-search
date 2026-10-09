@@ -1,5 +1,6 @@
 ---
 tagName: nve-checkbox-group
+added: 2026-09-28
 stars: 88
 description: Groups related checkboxes together with a shared label and validation messaging for multi-select form inputs.
 category: Forms

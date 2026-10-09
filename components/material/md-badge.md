@@ -1,5 +1,6 @@
 ---
 tagName: md-badge
+added: 2026-09-27
 stars: 11283
 description: Material web components
 category: Feedback

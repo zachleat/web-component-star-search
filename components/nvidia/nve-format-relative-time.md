@@ -1,5 +1,6 @@
 ---
 tagName: nve-format-relative-time
+added: 2026-09-28
 stars: 88
 description: Formats a date/time value as localized relative text using the Intl.RelativeTimeFormat API.
 category: Data

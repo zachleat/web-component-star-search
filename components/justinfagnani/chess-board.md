@@ -1,5 +1,6 @@
 ---
 tagName: chess-board
+added: 2026-09-28
 stars: 123
 description: A chessboard web component
 category: Content

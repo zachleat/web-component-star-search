@@ -1,5 +1,6 @@
 ---
 tagName: sl-progress-ring
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Progress rings are used to show the progress of a determinate operation in a circular fashion.

@@ -1,5 +1,6 @@
 ---
 tagName: contrast-details
+added: 2026-09-27
 stars: 12
 description: A Web Component to display the contrast ratio and level of two colours using CSS custom properties
 category: Layout

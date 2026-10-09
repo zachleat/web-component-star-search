@@ -1,5 +1,6 @@
 ---
 tagName: qr-code
+added: 2026-09-28
 stars: 1382
 description: QR Code Web Component
 category: Media

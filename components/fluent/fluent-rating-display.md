@@ -1,5 +1,6 @@
 ---
 tagName: fluent-rating-display
+added: 2026-09-27
 stars: 20298
 description: A Rating Display Custom HTML Element. Based on BaseRatingDisplay and includes style and layout specific attributes
 category: Forms

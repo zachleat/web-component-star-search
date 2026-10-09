@@ -1,5 +1,6 @@
 ---
 tagName: fluent-radio-group
+added: 2026-09-27
 stars: 20298
 description: "A Radio Group Custom HTML Element. Implements the | ARIA `radiogroup` role."
 category: Forms

@@ -1,5 +1,6 @@
 ---
 tagName: lazy-img
+added: 2026-09-27
 stars: 4
 description: Web component that enables you to lazy load an image based on screen size
 category: Media

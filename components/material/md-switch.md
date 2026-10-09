@@ -1,5 +1,6 @@
 ---
 tagName: md-switch
+added: 2026-09-27
 stars: 11283
 description: Switches toggle the state of a single item on or off.
 category: Forms

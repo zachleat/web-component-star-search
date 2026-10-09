@@ -1,5 +1,6 @@
 ---
 tagName: nve-panel-content
+added: 2026-09-28
 stars: 88
 description: "Contains the main body content within a panel, providing a structured region for detailed information."
 category: Layout

@@ -1,5 +1,6 @@
 ---
 tagName: sl-color-picker
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Color pickers allow the user to select a color.

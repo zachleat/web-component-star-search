@@ -1,5 +1,6 @@
 ---
 tagName: sl-copy-button
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Copies text data to the clipboard when the user clicks the trigger.

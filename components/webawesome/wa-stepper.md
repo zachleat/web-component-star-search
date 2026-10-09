@@ -1,5 +1,6 @@
 ---
 tagName: wa-stepper
+added: 2026-09-28
 stars: 1348
 description: "Steppers visually guide users through a process step by step, breaking content into clear, logical stages."
 category: Forms

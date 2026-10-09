@@ -1,5 +1,6 @@
 ---
 tagName: file-attachment
+added: 2026-09-27
 stars: 132
 description: Attach files via drag and drop or file input.
 category: Forms

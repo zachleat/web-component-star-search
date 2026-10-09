@@ -1,5 +1,6 @@
 ---
 tagName: show-password-toggle
+added: 2026-09-27
 description: Adds show/hide functionality to password fields.
 category: Forms
 builtWith: Vanilla

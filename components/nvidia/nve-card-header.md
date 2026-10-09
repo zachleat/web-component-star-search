@@ -1,5 +1,6 @@
 ---
 tagName: nve-card-header
+added: 2026-09-28
 stars: 88
 description: "Displays the title and optional actions at the top of a card, establishing the card's identity and purpose."
 category: Layout

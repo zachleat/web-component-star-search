@@ -1,5 +1,6 @@
 ---
 tagName: wa-switch
+added: 2026-09-28
 stars: 1348
 description: "Switches toggle a single setting on or off and apply the change immediately, without requiring a form submission."
 category: Forms

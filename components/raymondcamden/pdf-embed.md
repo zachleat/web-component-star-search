@@ -1,5 +1,6 @@
 ---
 tagName: pdf-embed
+added: 2026-09-28
 stars: 25
 description: "Embeds a PDF inline using Adobe’s PDF Embed API, falling back to a regular link if the library doesn’t load."
 category: Media

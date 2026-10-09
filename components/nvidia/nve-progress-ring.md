@@ -1,5 +1,6 @@
 ---
 tagName: nve-progress-ring
+added: 2026-09-28
 stars: 88
 description: "The `progress-ring` component shows the status of a pending task. It also serves the basis of the page loading element."
 category: Feedback

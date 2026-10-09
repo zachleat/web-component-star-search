@@ -1,5 +1,6 @@
 ---
 tagName: wa-page
+added: 2026-09-28
 stars: 1348
 description: "Pages scaffold an entire application layout with header, navigation, sidebar, main content, aside, and footer regions."
 category: Layout

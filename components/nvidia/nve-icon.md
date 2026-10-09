@@ -1,5 +1,6 @@
 ---
 tagName: nve-icon
+added: 2026-09-28
 stars: 88
 description: An icon is a graphic symbol designed to visually show the purpose of an interface element.
 category: Media

@@ -1,5 +1,6 @@
 ---
 tagName: kelp-toc
+added: 2026-09-27
 stars: 645
 description: Generates a table of contents from the headings on the page.
 category: Navigation

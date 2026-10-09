@@ -1,5 +1,6 @@
 ---
 tagName: nve-grid-column
+added: 2026-09-28
 stars: 88
 description: "Defines a column header within a grid, specifying the column's label, width, and alignment for all cells beneath it."
 category: Layout

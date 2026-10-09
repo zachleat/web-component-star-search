@@ -1,5 +1,6 @@
 ---
 tagName: admin-bar
+added: 2026-09-27
 stars: 10
 description: A framework- and CMS-agnostic admin bar web component.
 category: Navigation

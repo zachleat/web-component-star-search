@@ -1,5 +1,6 @@
 ---
 tagName: tabbed-interface
+added: 2026-09-27
 stars: 2
 description: A web component that transforms heading-structured content into an accessible tabbed interface
 category: Navigation

@@ -1,5 +1,6 @@
 ---
 tagName: wa-time-input
+added: 2026-09-28
 stars: 1348
 description: "Time pickers let users enter a time through a segmented field or select one visually from a popup column picker. They support 12- and 24-hour formats, optional seconds, and locale-aware segment order."
 category: Forms

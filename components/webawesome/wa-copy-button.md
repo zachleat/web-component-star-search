@@ -1,5 +1,6 @@
 ---
 tagName: wa-copy-button
+added: 2026-09-28
 stars: 1348
 description: Copy buttons copy text to the clipboard when the user activates them. They provide built-in success and error feedback so users know the copy worked.
 category: Actions

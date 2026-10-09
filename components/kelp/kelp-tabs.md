@@ -1,5 +1,6 @@
 ---
 tagName: kelp-tabs
+added: 2026-09-27
 stars: 645
 description: Progressively enhances a list of anchor links and content sections into an accessible tabbed interface.
 category: Navigation

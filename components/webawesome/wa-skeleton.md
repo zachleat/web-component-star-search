@@ -1,5 +1,6 @@
 ---
 tagName: wa-skeleton
+added: 2026-09-28
 stars: 1348
 description: "Skeletons show placeholder shapes where content will appear once it finishes loading, reducing perceived wait time and preventing layout shift."
 category: Feedback

@@ -1,5 +1,6 @@
 ---
 tagName: wa-qr-code
+added: 2026-09-28
 stars: 1348
 description: "QR codes encode a URL or other short text into a scannable image, rendered client-side using the Canvas API."
 category: Media

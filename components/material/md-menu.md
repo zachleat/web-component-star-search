@@ -1,5 +1,6 @@
 ---
 tagName: md-menu
+added: 2026-09-27
 stars: 11283
 description: Menus display a list of choices on a temporary surface.
 category: Navigation

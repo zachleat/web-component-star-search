@@ -1,5 +1,6 @@
 ---
 tagName: wa-tree
+added: 2026-09-28
 stars: 1348
 description: Trees allow you to display a hierarchical list of selectable tree items. Items with children can be expanded and collapsed as desired by the user.
 category: Navigation

@@ -1,5 +1,6 @@
 ---
 tagName: lottie-player
+added: 2026-09-27
 archived: true
 stars: 1657
 description: Lottie animation and Telegram Sticker player web components.

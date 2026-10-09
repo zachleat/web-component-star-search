@@ -1,5 +1,6 @@
 ---
 tagName: fluent-radio
+added: 2026-09-27
 stars: 20298
 description: "A Radio Custom HTML Element. Implements the | ARIA `radio` role."
 category: Forms

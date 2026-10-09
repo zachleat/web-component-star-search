@@ -1,5 +1,6 @@
 ---
 tagName: sl-animation
+added: 2026-09-27
 archived: true
 stars: 13834
 description: "Animate elements declaratively with nearly 100 baked-in presets, or roll your own with custom keyframes. Powered by the Web Animations API."

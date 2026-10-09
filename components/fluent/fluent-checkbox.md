@@ -1,5 +1,6 @@
 ---
 tagName: fluent-checkbox
+added: 2026-09-27
 stars: 20298
 description: "A Checkbox Custom HTML Element. Implements the | ARIA checkbox ."
 category: Forms

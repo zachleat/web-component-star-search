@@ -1,5 +1,6 @@
 ---
 tagName: filter-container
+added: 2026-09-27
 stars: 93
 description: Filtering visible child elements based on form field values.
 category: Utilities

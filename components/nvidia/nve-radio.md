@@ -1,5 +1,6 @@
 ---
 tagName: nve-radio
+added: 2026-09-28
 stars: 88
 description: A radio button is a control that enables users to choose one option from a list of mutually exclusive options.
 category: Forms

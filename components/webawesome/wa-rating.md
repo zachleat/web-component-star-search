@@ -1,5 +1,6 @@
 ---
 tagName: wa-rating
+added: 2026-09-28
 stars: 1348
 description: "Ratings display a numeric score as a row of selectable symbols, typically stars. Use them to capture quick feedback or show an average rating for a product or piece of content."
 category: Forms

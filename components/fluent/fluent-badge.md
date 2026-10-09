@@ -1,5 +1,6 @@
 ---
 tagName: fluent-badge
+added: 2026-09-27
 stars: 20298
 description: The base class used for constructing a fluent-badge custom element
 category: Feedback

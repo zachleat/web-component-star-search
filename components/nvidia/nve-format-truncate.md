@@ -1,5 +1,6 @@
 ---
 tagName: nve-format-truncate
+added: 2026-09-28
 stars: 88
 description: "Truncates text at its start, center, or end while preserving the full text for assistive technology."
 category: Data

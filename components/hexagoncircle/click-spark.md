@@ -1,5 +1,6 @@
 ---
 tagName: click-spark
+added: 2026-09-28
 stars: 122
 description: Adds a little spark effect to your clicks.
 category: Effects

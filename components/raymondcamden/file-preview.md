@@ -1,5 +1,6 @@
 ---
 tagName: file-preview
+added: 2026-09-27
 stars: 1
 description: Shows a preview of the file a user selects in a file input.
 category: Forms

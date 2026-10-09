@@ -1,5 +1,6 @@
 ---
 tagName: sl-textarea
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Textareas collect data from the user and allow multiple lines of text.

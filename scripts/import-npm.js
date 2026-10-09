@@ -42,10 +42,15 @@ for (let name of packages) {
 	let entries = manifestPath ? entriesFromManifest(await getJson(cdn + manifestPath), defaults) : [];
 	if (!entries.length) {
 		let tags = new Set();
-		let sources = filenames.filter(f => /\.m?js$/.test(f) && !/\.min\.|test|spec|demo|example|node_modules|config/.test(f));
+		let scannable = filenames.filter(f => /\.m?js$/.test(f) && !/test|spec|demo|example|node_modules|config/.test(f));
+		// Prefer unminified files, but some packages only ship minified ones.
+		let sources = scannable.filter(f => !/\.min\./.test(f));
+		if (!sources.length) {
+			sources = scannable;
+		}
 		for (let file of sources.slice(0, 100)) {
 			let js = await (await fetch(cdn + file)).text();
-			for (let [, tag] of js.matchAll(/(?:\bdefine\(\s*(?:[\w$.]+\s*\|\|\s*)?|define\(\s*tag\s*=\s*|static get is\(\)\s*\{\s*return\s*|customElement\(\s*)\s*["'`]([a-z][\w]*-[\w-]*)["'`]/g)) {
+			for (let [, tag] of js.matchAll(/(?:\bdefine\(\s*(?:[\w$.]+\s*\|\|\s*)?|define\(\s*[\w$]+\s*=\s*|static get is\(\)\s*\{\s*return\s*|customElement\(\s*)\s*["'`]([a-z][\w]*-[\w-]*)["'`]/g)) {
 				tags.add(tag);
 			}
 		}

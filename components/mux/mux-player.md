@@ -1,5 +1,6 @@
 ---
 tagName: mux-player
+added: 2026-09-27
 stars: 364
 description: An open source Mux player web component that Just Works™
 category: Media

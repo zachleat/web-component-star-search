@@ -1,5 +1,6 @@
 ---
 tagName: wa-combobox
+added: 2026-09-28
 description: "Comboboxes combine a text input with a listbox, allowing users to filter and select from predefined options or enter custom values."
 category: Forms
 builtWith: Lit

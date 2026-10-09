@@ -1,5 +1,6 @@
 ---
 tagName: nve-switch-group
+added: 2026-09-28
 stars: 88
 description: A switch group is a container for a group of switches.
 category: Forms

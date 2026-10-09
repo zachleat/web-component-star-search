@@ -1,5 +1,6 @@
 ---
 tagName: nve-accordion-group
+added: 2026-09-28
 stars: 88
 description: "Organizes many accordions into a cohesive group, enabling coordinated expand/collapse behavior such as single-item expansion."
 category: Layout

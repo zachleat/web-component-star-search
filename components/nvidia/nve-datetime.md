@@ -1,5 +1,6 @@
 ---
 tagName: nve-datetime
+added: 2026-09-28
 stars: 88
 description: A datetime picker is a control that enables users to choose a datetime value.
 category: Forms

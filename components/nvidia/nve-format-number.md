@@ -1,5 +1,6 @@
 ---
 tagName: nve-format-number
+added: 2026-09-28
 stars: 88
 description: "A localized number formatter for currencies, percentages, units, and compact notation, backed by Intl.NumberFormat."
 category: Data

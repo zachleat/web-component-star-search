@@ -1,5 +1,6 @@
 ---
 tagName: input-knob
+added: 2026-09-27
 archived: true
 stars: 83
 description: "A rotating, touch-sensitive knob web component that acts like an <input type=\"range\">."

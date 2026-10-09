@@ -1,5 +1,6 @@
 ---
 tagName: ppp-price
+added: 2026-09-27
 stars: 11
 description: Web Component to show Parity Purchasing Power normalized prices.
 category: Data

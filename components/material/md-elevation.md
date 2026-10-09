@@ -1,5 +1,6 @@
 ---
 tagName: md-elevation
+added: 2026-09-27
 stars: 11283
 description: "The `<md-elevation>` custom element with default styles."
 category: Layout

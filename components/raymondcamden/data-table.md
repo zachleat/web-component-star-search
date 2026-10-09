@@ -1,5 +1,6 @@
 ---
 tagName: data-table
+added: 2026-09-27
 description: "Renders a sortable, paginated table from a JSON API."
 category: Data
 builtWith: Vanilla

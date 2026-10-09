@@ -1,5 +1,6 @@
 ---
 tagName: midi-player
+added: 2026-09-27
 stars: 910
 description: MIDI file player and visualizer web components
 category: Media

@@ -1,5 +1,6 @@
 ---
 tagName: nve-button
+added: 2026-09-28
 stars: 88
 description: "A button is a widget that enables users to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation."
 category: Actions

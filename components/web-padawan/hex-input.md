@@ -1,5 +1,6 @@
 ---
 tagName: hex-input
+added: 2026-09-27
 stars: 854
 description: A custom element for entering color in HEX format.
 category: Forms

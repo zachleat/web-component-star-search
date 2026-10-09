@@ -1,5 +1,6 @@
 ---
 tagName: wa-pagination
+added: 2026-09-28
 stars: 1348
 description: "Pagination splits long lists of content into pages, letting users navigate between them."
 category: Navigation

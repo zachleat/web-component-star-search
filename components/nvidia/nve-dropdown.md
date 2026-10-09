@@ -1,5 +1,6 @@
 ---
 tagName: nve-dropdown
+added: 2026-09-28
 stars: 88
 description: Generic dropdown element for rendering a variety of different content such as interactive navigation or form controls.
 category: Overlays

@@ -1,5 +1,6 @@
 ---
 tagName: nve-skeleton
+added: 2026-09-28
 stars: 88
 description: A loading placeholder component that displays animated placeholder shapes while content loads.
 category: Feedback

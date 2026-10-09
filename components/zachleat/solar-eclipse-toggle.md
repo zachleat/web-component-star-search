@@ -1,5 +1,6 @@
 ---
 tagName: solar-eclipse-toggle
+added: 2026-09-27
 stars: 12
 description: An accessible light/dark theme toggle button that follows your system preference by default.
 category: Effects

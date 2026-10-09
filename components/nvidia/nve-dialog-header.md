@@ -1,5 +1,6 @@
 ---
 tagName: nve-dialog-header
+added: 2026-09-28
 stars: 88
 description: "Displays the title and contextual information at the top of a dialog to orient users to the dialog's purpose."
 category: Overlays

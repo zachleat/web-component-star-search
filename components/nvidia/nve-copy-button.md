@@ -1,5 +1,6 @@
 ---
 tagName: nve-copy-button
+added: 2026-09-28
 stars: 88
 description: A copy button is a button that easily enables the copy to clipboard pattern.
 category: Actions

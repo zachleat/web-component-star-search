@@ -121,7 +121,9 @@ export function writeEntries(entries, folder, { overwrite = false } = {}) {
 			continue;
 		}
 		let { tagName, description, category, builtWith, library, ...rest } = data;
-		fs.writeFileSync(file, toMarkdown({ tagName, description, category, builtWith, library, ...rest }, body));
+		let now = new Date();
+		let added = new Date(now - now.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+		fs.writeFileSync(file, toMarkdown({ tagName, added, description, category, builtWith, library, ...rest }, body));
 		count++;
 	}
 	console.log(`Wrote ${count} components to ${outputDir}`);

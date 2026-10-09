@@ -1,5 +1,6 @@
 ---
 tagName: altcha-widget
+added: 2026-09-27
 stars: 2783
 description: "Privacy-first CAPTCHA widget, compliant with global regulations (GDPR/HIPAA/CCPA/LGDP/DPDPA/PIPL) and WCAG accessible. No tracking, self-verifying."
 category: Forms

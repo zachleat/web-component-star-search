@@ -1,5 +1,6 @@
 ---
 tagName: password-toggle
+added: 2026-09-28
 stars: 14
 description: Toggles the visibility of a password input’s value.
 category: Forms

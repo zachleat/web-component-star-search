@@ -1,5 +1,6 @@
 ---
 tagName: two-up
+added: 2026-09-27
 stars: 337
 description: Compare two elements by sliding between them.
 category: Media

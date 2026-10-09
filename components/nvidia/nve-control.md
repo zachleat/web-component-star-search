@@ -1,5 +1,6 @@
 ---
 tagName: nve-control
+added: 2026-09-28
 stars: 88
 description: "Wraps a form input with its associated label and validation messages, managing layout and accessibility associations."
 category: Forms

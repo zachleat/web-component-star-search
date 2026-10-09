@@ -1,5 +1,6 @@
 ---
 tagName: track-list
+added: 2026-09-27
 stars: 41
 description: A Web Component for enhancing a list of audio tracks
 category: Data

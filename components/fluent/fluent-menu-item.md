@@ -1,5 +1,6 @@
 ---
 tagName: fluent-menu-item
+added: 2026-09-27
 stars: 20298
 description: A Switch Custom HTML Element.
 category: Navigation

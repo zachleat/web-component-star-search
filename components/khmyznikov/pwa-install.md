@@ -1,5 +1,6 @@
 ---
 tagName: pwa-install
+added: 2026-09-27
 stars: 950
 description: PWA install dialog provide more convenience user experience and fix lack of native dialogs in some browsers.
 category: Overlays

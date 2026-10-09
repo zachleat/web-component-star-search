@@ -1,5 +1,6 @@
 ---
 tagName: kelp-until-selected
+added: 2026-09-27
 stars: 645
 description: Hides or disables content until a related field has a value selected.
 category: Forms

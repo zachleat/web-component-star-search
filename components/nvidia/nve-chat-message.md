@@ -1,5 +1,6 @@
 ---
 tagName: nve-chat-message
+added: 2026-09-28
 stars: 88
 description: "A chat message component displays a text message within a conversation, sent between users or bots"
 category: Feedback

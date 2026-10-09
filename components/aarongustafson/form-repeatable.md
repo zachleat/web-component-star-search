@@ -1,5 +1,6 @@
 ---
 tagName: form-repeatable
+added: 2026-09-27
 stars: 7
 description: A web component that enables you to control the duplication of fields.
 category: Forms

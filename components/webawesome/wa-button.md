@@ -1,5 +1,6 @@
 ---
 tagName: wa-button
+added: 2026-09-28
 stars: 1348
 description: "Buttons represent actions the user can take, such as submitting a form, opening a dialog, or navigating to another page."
 category: Actions

@@ -1,5 +1,6 @@
 ---
 tagName: form-saver
+added: 2026-09-27
 stars: 58
 description: A web component that stores (and restores) values within the first form it contains.
 category: Forms

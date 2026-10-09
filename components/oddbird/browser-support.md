@@ -1,5 +1,6 @@
 ---
 tagName: browser-support
+added: 2026-09-27
 stars: 10
 description: A web component for showing browser-support data from the Web Features project
 category: Content

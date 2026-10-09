@@ -1,5 +1,6 @@
 ---
 tagName: code-pen
+added: 2026-09-27
 stars: 35
 description: A Web Component to open code samples in CodePen
 category: Content

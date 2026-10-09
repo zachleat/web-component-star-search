@@ -1,5 +1,6 @@
 ---
 tagName: link-preview
+added: 2026-09-27
 stars: 7
 description: Custom element to hover link previews
 category: Navigation

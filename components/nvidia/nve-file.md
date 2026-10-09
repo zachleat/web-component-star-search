@@ -1,5 +1,6 @@
 ---
 tagName: nve-file
+added: 2026-09-28
 stars: 88
 description: A file picker is a control that enables users to choose a file value.
 category: Forms

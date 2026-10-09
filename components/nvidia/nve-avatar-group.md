@@ -1,5 +1,6 @@
 ---
 tagName: nve-avatar-group
+added: 2026-09-28
 stars: 88
 description: "An avatar group displays a collection of user avatars in a compact and organized layout, showcasing many participants or contributors in a space-efficient way."
 category: Media

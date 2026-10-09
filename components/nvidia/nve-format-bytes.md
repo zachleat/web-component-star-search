@@ -1,5 +1,6 @@
 ---
 tagName: nve-format-bytes
+added: 2026-09-28
 stars: 88
 description: "Formats a byte count as localized, human-readable decimal or binary units."
 category: Data

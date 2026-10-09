@@ -1,5 +1,6 @@
 ---
 tagName: sl-tooltip
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Tooltips display additional information based on a specific action.

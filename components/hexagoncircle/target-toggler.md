@@ -1,5 +1,6 @@
 ---
 tagName: target-toggler
+added: 2026-09-28
 stars: 31
 description: Toggles the visibility of another element on the page.
 category: Layout

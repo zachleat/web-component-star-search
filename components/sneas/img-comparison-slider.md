@@ -1,5 +1,6 @@
 ---
 tagName: img-comparison-slider
+added: 2026-09-27
 stars: 869
 description: Slider component to compare images before and after
 category: Media

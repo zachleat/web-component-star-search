@@ -1,5 +1,6 @@
 ---
 tagName: nve-panel-header
+added: 2026-09-28
 stars: 88
 description: "Displays the title, subtitle, and optional action controls at the top of a panel."
 category: Layout

@@ -1,5 +1,7 @@
 // Authors that are companies or organizations; everyone else counts as indie.
 export default [
+	"Red Hat",
+	"Adobe",
 	"ALTCHA",
 	"Cloud Four",
 	"GitHub",
@@ -14,6 +16,7 @@ export default [
 	"Ramsey Solutions",
 	"Shoelace",
 	"Spline",
+	"Vaadin",
 	"Web Awesome",
 	"WebDX Community Group",
 ];

@@ -1,5 +1,6 @@
 ---
 tagName: wa-known-date
+added: 2026-09-28
 stars: 1348
 description: "Known dates let users enter dates they already know - birthdays, expirations, document dates - through three separate day, month, and year fields shown in the locale's natural order."
 category: Data

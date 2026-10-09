@@ -1,5 +1,6 @@
 ---
 tagName: browser-window
+added: 2026-09-27
 stars: 277
 description: Used in demos as a way to fake a Safari-esque web browser window.
 category: Layout

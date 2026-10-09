@@ -1,5 +1,6 @@
 ---
 tagName: wa-split-panel
+added: 2026-09-28
 stars: 1348
 description: "Split panels display two adjacent panels separated by a draggable divider, letting users resize each side to suit their workflow."
 category: Layout

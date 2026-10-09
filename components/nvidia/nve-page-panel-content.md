@@ -1,5 +1,6 @@
 ---
 tagName: nve-page-panel-content
+added: 2026-09-28
 stars: 88
 description: Contains the scrollable main body content within a page panel region.
 category: Layout

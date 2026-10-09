@@ -1,5 +1,6 @@
 ---
 tagName: sl-select
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Selects allow you to choose items from a menu of predefined options.

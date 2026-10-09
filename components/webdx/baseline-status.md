@@ -1,5 +1,6 @@
 ---
 tagName: baseline-status
+added: 2026-09-27
 stars: 244
 description: Shows the Baseline status and browser support of a web feature.
 category: Data

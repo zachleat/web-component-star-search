@@ -1,5 +1,6 @@
 ---
 tagName: link-peek
+added: 2026-09-27
 stars: 53
 description: A Web Component to unfurl regular links into rich previews
 category: Navigation

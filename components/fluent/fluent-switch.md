@@ -1,5 +1,6 @@
 ---
 tagName: fluent-switch
+added: 2026-09-27
 stars: 20298
 description: A Switch Custom HTML Element. Based on BaseCheckbox and includes style and layout specific attributes
 category: Forms

@@ -1,5 +1,6 @@
 ---
 tagName: sl-dialog
+added: 2026-09-27
 archived: true
 stars: 13834
 description: "Dialogs, sometimes called \"modals\", appear above the page and require the user's immediate attention."

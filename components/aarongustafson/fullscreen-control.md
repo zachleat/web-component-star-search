@@ -1,5 +1,6 @@
 ---
 tagName: fullscreen-control
+added: 2026-09-27
 stars: 5
 description: A web component to progressively enhance any video or iframe element to have fullscreen capabilities.
 category: Media

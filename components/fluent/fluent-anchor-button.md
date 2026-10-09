@@ -1,5 +1,6 @@
 ---
 tagName: fluent-anchor-button
+added: 2026-09-27
 stars: 20298
 description: An Anchor Custom HTML Element. Based on BaseAnchor and includes style and layout specific attributes
 category: Navigation

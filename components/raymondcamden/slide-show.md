@@ -1,5 +1,6 @@
 ---
 tagName: slide-show
+added: 2026-09-27
 stars: 4
 description: "Displays one image at a time from a list, with controls to move between them."
 category: Media

@@ -1,5 +1,6 @@
 ---
 tagName: dark-mode-toggle
+added: 2026-09-28
 stars: 1224
 description: Web Component that toggles dark mode 🌒
 category: Forms

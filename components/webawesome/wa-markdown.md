@@ -1,5 +1,6 @@
 ---
 tagName: wa-markdown
+added: 2026-09-28
 stars: 1348
 description: "Markdown elements render markdown content as HTML directly in the browser, making it easy to display user-generated content or documentation without a server-side build step."
 category: Content

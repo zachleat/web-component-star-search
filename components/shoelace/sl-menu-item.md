@@ -1,5 +1,6 @@
 ---
 tagName: sl-menu-item
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Menu items provide options for the user to pick from in a menu.

@@ -1,5 +1,6 @@
 ---
 tagName: nve-steps
+added: 2026-09-28
 stars: 88
 description: Steps enables a multi-step workflow allowing a user to complete a goal in a specific sequence.
 category: Navigation

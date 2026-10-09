@@ -1,5 +1,6 @@
 ---
 tagName: wa-dropdown
+added: 2026-09-28
 stars: 1348
 description: "Dropdowns display a list of options triggered by a button or other element. They support keyboard navigation, submenus, and checkable items for building menus and context actions."
 category: Overlays

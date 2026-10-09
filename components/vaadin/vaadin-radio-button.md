@@ -1,0 +1,67 @@
+---
+tagName: vaadin-radio-button
+added: 2026-10-08
+description: "`<vaadin-radio-button>` is a web component representing a choice in a radio group. Only one radio button in the group can be selected at the same time."
+category: Forms
+builtWith: Lit
+jsSize: 10158
+library:
+  name: Vaadin
+  url: https://vaadin.com/docs/latest/components
+package: "@vaadin/radio-group"
+author: Vaadin
+repository: https://github.com/vaadin/web-components
+documentation: https://vaadin.com/components
+license: Apache-2.0
+authorUrl: https://vaadin.com/
+attributes: [autofocus, checked, disabled, label, name, theme, value]
+events: [checked-changed]
+---
+
+`<vaadin-radio-button>` is a web component representing a choice in a radio group.
+Only one radio button in the group can be selected at the same time.
+
+```html
+<vaadin-radio-group label="Travel class">
+  <vaadin-radio-button value="economy" label="Economy"></vaadin-radio-button>
+  <vaadin-radio-button value="business" label="Business"></vaadin-radio-button>
+  <vaadin-radio-button value="firstClass" label="First Class"></vaadin-radio-button>
+</vaadin-radio-group>
+```
+
+### Styling
+
+The following shadow DOM parts are available for styling:
+
+Part name   | Description
+------------|----------------
+`radio`     | The wrapper element that contains slotted `<input type="radio">`.
+
+The following state attributes are available for styling:
+
+Attribute    | Description
+-------------|--------------------------
+`active`     | Set when the radio button is pressed, either with a pointer or the keyboard.
+`disabled`   | Set when the radio button is disabled.
+`focus-ring` | Set when the radio button is focused using the keyboard.
+`focused`    | Set when the radio button is focused.
+`checked`    | Set when the radio button is checked.
+`has-label`  | Set when the radio button has a label.
+
+The following custom CSS properties are available for styling:
+
+Custom CSS property                          |
+:--------------------------------------------|
+| `--vaadin-radio-button-background`         |
+| `--vaadin-radio-button-border-color`       |
+| `--vaadin-radio-button-border-width`       |
+| `--vaadin-radio-button-gap`                |
+| `--vaadin-radio-button-label-color`        |
+| `--vaadin-radio-button-label-font-size`    |
+| `--vaadin-radio-button-label-font-weight`  |
+| `--vaadin-radio-button-label-line-height`  |
+| `--vaadin-radio-button-marker-color`       |
+| `--vaadin-radio-button-marker-size`        |
+| `--vaadin-radio-button-size`               |
+
+See [Styling Components](https://vaadin.com/docs/latest/styling/styling-components) documentation.

@@ -1,5 +1,6 @@
 ---
 tagName: nve-dialog
+added: 2026-09-28
 stars: 88
 description: Dialog is a component that appears above main content. A modal dialog displays critical information that requires user attention and interrupts user flow.
 category: Overlays

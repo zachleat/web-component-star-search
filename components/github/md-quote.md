@@ -1,5 +1,6 @@
 ---
 tagName: md-quote
+added: 2026-09-27
 stars: 411
 description: Markdown formatting buttons for text inputs.
 category: Content

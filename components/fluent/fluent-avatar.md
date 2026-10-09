@@ -1,5 +1,6 @@
 ---
 tagName: fluent-avatar
+added: 2026-09-27
 stars: 20298
 description: An Avatar Custom HTML Element. Based on BaseAvatar and includes style and layout specific attributes
 category: Media

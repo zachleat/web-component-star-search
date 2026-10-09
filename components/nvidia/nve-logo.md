@@ -1,5 +1,6 @@
 ---
 tagName: nve-logo
+added: 2026-09-28
 stars: 88
 description: A visual indicator for a brand or application.
 category: Media

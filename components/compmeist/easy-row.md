@@ -1,5 +1,6 @@
 ---
 tagName: easy-row
+added: 2026-09-27
 stars: 1
 description: A CSS grid page layout utility.
 category: Layout

@@ -1,5 +1,6 @@
 ---
 tagName: md-filter-chip
+added: 2026-09-27
 stars: 11283
 description: "TODO(b/243982145): add docs"
 category: Forms

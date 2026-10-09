@@ -1,5 +1,6 @@
 ---
 tagName: elena-visually-hidden
+added: 2026-09-27
 stars: 192
 description: Visually hidden hides the element visually while keeping it available for assistive technologies.
 category: Utilities

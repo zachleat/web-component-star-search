@@ -1,5 +1,6 @@
 ---
 tagName: fluent-tree-item
+added: 2026-09-27
 stars: 20298
 description: "The Fluent Tree Item Element. Implements @microsoft/fast-foundation#BaseTreeItem."
 category: Navigation

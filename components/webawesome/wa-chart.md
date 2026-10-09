@@ -1,5 +1,6 @@
 ---
 tagName: wa-chart
+added: 2026-09-28
 description: Charts provide a flexible wrapper around Chart.js for building themed data visualizations.
 category: Data
 builtWith: Lit

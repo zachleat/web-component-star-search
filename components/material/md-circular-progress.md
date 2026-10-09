@@ -1,5 +1,6 @@
 ---
 tagName: md-circular-progress
+added: 2026-09-27
 stars: 11283
 description: "Circular progress indicators display progress by animating along an invisible circular track in a clockwise direction. They can be applied directly to a surface, such as a button or card."
 category: Feedback

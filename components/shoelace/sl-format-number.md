@@ -1,5 +1,6 @@
 ---
 tagName: sl-format-number
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Formats a number using the specified locale and options.

@@ -1,5 +1,6 @@
 ---
 tagName: bt-device
+added: 2026-09-27
 description: A small (900 byte) Custom Element to make Web Bluetooth a little easier to use.
 category: Utilities
 builtWith: Vanilla

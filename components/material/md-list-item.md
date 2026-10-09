@@ -1,5 +1,6 @@
 ---
 tagName: md-list-item
+added: 2026-09-27
 stars: 11283
 description: "Lists are continuous, vertical indexes of text or images. Items are placed inside the list."
 category: Data

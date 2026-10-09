@@ -1,5 +1,6 @@
 ---
 tagName: wa-slider
+added: 2026-09-28
 stars: 1348
 description: Sliders let users choose a numeric value within a defined range by dragging a thumb along a track.
 category: Forms

@@ -1,5 +1,6 @@
 ---
 tagName: nve-accordion-header
+added: 2026-09-28
 stars: 88
 description: Provides the clickable heading region of an accordion that toggles the visibility of associated content.
 category: Layout

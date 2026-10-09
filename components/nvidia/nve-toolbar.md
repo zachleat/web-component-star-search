@@ -1,5 +1,6 @@
 ---
 tagName: nve-toolbar
+added: 2026-09-28
 stars: 88
 description: "A toolbar is a container for grouping a set of controls, such as buttons, icon buttons and combobox search."
 category: Navigation

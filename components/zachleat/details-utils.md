@@ -1,5 +1,6 @@
 ---
 tagName: details-utils
+added: 2026-09-27
 stars: 272
 description: A collection of utilities to progressively enhance <details> with new features
 category: Layout

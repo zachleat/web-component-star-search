@@ -1,5 +1,6 @@
 ---
 tagName: nve-dialog-footer
+added: 2026-09-28
 stars: 88
 description: "Contains the action buttons and controls at the bottom of a dialog for confirming, canceling, or navigating."
 category: Overlays

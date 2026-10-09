@@ -1,5 +1,6 @@
 ---
 tagName: scrolly-rail
+added: 2026-09-28
 stars: 26
 description: Horizontal snap scroller styles and previous/next control enhancements
 category: Layout

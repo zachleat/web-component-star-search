@@ -1,5 +1,6 @@
 ---
 tagName: slide-show
+added: 2026-09-27
 stars: 12
 description: "The accessible, scrollable, styleable, horizontal carousel custom element. No dependencies, about 12kB minified and gzipped."
 category: Layout

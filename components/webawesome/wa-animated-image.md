@@ -1,5 +1,6 @@
 ---
 tagName: wa-animated-image
+added: 2026-09-28
 stars: 1348
 description: Animated images display GIFs and WEBPs with controls to play and pause them on demand. Use them when you want motion but need to give users control over when it plays.
 category: Effects

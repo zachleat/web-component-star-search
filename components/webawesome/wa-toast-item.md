@@ -1,5 +1,6 @@
 ---
 tagName: wa-toast-item
+added: 2026-09-28
 stars: 1348
 description: Toast items are individual notifications displayed within a toast container.
 category: Overlays

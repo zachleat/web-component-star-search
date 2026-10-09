@@ -1,5 +1,6 @@
 ---
 tagName: nve-resize-handle
+added: 2026-09-28
 stars: 88
 description: A resize-handle slider is a control that enables users to resize views or panels vertically or horizontally.
 category: Layout

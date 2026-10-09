@@ -1,5 +1,6 @@
 ---
 tagName: fluent-listbox
+added: 2026-09-27
 stars: 20298
 description: "A Listbox Custom HTML Element. Implements the | ARIA listbox role."
 category: Content

@@ -1,5 +1,6 @@
 ---
 tagName: nve-steps-item
+added: 2026-09-28
 stars: 88
 description: "Represents an individual step within a multi-step workflow, displaying its status and enabling navigation within the parent steps component."
 category: Layout

@@ -1,5 +1,6 @@
 ---
 tagName: sl-skeleton
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Skeletons are used to provide a visual representation of where content will eventually be drawn.

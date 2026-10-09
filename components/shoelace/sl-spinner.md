@@ -1,5 +1,6 @@
 ---
 tagName: sl-spinner
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Spinners are used to show the progress of an indeterminate operation.

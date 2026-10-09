@@ -1,5 +1,6 @@
 ---
 tagName: ix-tree-node
+added: 2026-10-08
 description: An expandable tree view for inspecting JavaScript objects.
 category: Data
 builtWith: Lit

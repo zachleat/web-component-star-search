@@ -1,5 +1,6 @@
 ---
 tagName: task-lists
+added: 2026-09-27
 stars: 152
 description: Drag and drop task list items.
 category: Data

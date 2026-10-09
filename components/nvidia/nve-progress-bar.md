@@ -1,5 +1,6 @@
 ---
 tagName: nve-progress-bar
+added: 2026-09-28
 stars: 88
 description: "A progress bar is a visual indicator of the status of a running task. Under the hood, the component uses the native HTML `progress` element to achieve proper a11y concerns."
 category: Feedback

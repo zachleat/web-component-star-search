@@ -1,5 +1,6 @@
 ---
 tagName: flex-grid
+added: 2026-09-27
 stars: 1
 description: A powerful flex based grid system
 category: Layout

@@ -1,5 +1,6 @@
 ---
 tagName: compress-table
+added: 2026-09-27
 description: Truncates a long table to its first rows with a control to show the rest.
 category: Data
 builtWith: Vanilla

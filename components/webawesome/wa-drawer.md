@@ -1,5 +1,6 @@
 ---
 tagName: wa-drawer
+added: 2026-09-28
 stars: 1348
 description: "Drawers slide in from the edge of a container to expose additional options and information without navigating away. Useful for navigation menus, filters, and secondary content."
 category: Overlays

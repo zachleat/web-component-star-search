@@ -1,5 +1,6 @@
 ---
 tagName: table-modifiable
+added: 2026-09-27
 description: A web component that enables users to hide & show columns on an HTML table.
 category: Data
 builtWith: Vanilla

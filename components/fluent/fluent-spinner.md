@@ -1,5 +1,6 @@
 ---
 tagName: fluent-spinner
+added: 2026-09-27
 stars: 20298
 description: A Spinner Custom HTML Element. Based on BaseSpinner and includes style and layout specific attributes
 category: Feedback

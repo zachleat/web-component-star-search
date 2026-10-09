@@ -1,5 +1,6 @@
 ---
 tagName: nve-icon-button
+added: 2026-09-28
 stars: 88
 description: An icon button is a button that displays only an icon without a visual label.
 category: Media

@@ -1,5 +1,6 @@
 ---
 tagName: is-land
+added: 2026-09-27
 stars: 636
 description: A framework independent partial hydration islands architecture implementation.
 category: Utilities

@@ -1,5 +1,6 @@
 ---
 tagName: wa-carousel
+added: 2026-09-27
 stars: 1348
 description: "Carousels display a series of content slides along a horizontal or vertical axis, one or more at a time. Users can navigate between slides with controls, pagination, or autoplay."
 category: Media

@@ -1,5 +1,6 @@
 ---
 tagName: feedback-component
+added: 2026-09-27
 stars: 56
 description: A native web component for collecting quick user feedback.
 category: Forms

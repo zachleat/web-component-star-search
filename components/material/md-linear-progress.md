@@ -1,5 +1,6 @@
 ---
 tagName: md-linear-progress
+added: 2026-09-27
 stars: 11283
 description: "Linear progress indicators display progress by animating along the length of a fixed, visible track."
 category: Feedback

@@ -1,5 +1,6 @@
 ---
 tagName: nve-accordion
+added: 2026-09-28
 stars: 88
 description: An accordion is a vertical stack of interactive headings used to toggle the display of further information.
 category: Layout

@@ -1,5 +1,6 @@
 ---
 tagName: nve-page
+added: 2026-09-28
 stars: 88
 description: "Provide a consistent page structure across the applications, ensuring a seamless user experience."
 category: Layout

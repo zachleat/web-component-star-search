@@ -1,5 +1,6 @@
 ---
 tagName: fluent-link
+added: 2026-09-27
 stars: 20298
 description: "An Anchor Custom HTML Element. Based largely on the | <a> element ."
 category: Navigation

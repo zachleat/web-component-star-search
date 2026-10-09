@@ -1,5 +1,6 @@
 ---
 tagName: stampino-element
+added: 2026-10-08
 description: Defines declarative web components entirely in HTML.
 category: Utilities
 builtWith: Lit

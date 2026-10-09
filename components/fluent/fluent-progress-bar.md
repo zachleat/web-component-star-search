@@ -1,5 +1,6 @@
 ---
 tagName: fluent-progress-bar
+added: 2026-09-27
 stars: 20298
 description: A Progress HTML Element. Based on BaseProgressBar and includes style and layout specific attributes
 category: Feedback

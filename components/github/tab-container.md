@@ -1,5 +1,6 @@
 ---
 tagName: tab-container
+added: 2026-09-27
 stars: 381
 description: Tab container element
 category: Navigation

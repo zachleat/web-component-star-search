@@ -1,5 +1,6 @@
 ---
 tagName: fluent-accordion-item
+added: 2026-09-27
 stars: 20298
 description: An Accordion Item Custom HTML Element. Based on BaseAccordionItem and includes style and layout specific attributes
 category: Layout

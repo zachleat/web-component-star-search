@@ -1,5 +1,6 @@
 ---
 tagName: wa-intersection-observer
+added: 2026-09-28
 stars: 1348
 description: "Tracks immediate child elements and fires events as they move in and out of view. Useful for lazy loading, scroll-triggered animations, and viewport-aware interactions."
 category: Utilities

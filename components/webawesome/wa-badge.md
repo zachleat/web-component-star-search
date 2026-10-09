@@ -1,5 +1,6 @@
 ---
 tagName: wa-badge
+added: 2026-09-28
 stars: 1348
 description: "Badges draw attention to adjacent content by displaying a status, count, or label. Use them to highlight notifications, categorize items, or flag new activity."
 category: Feedback

@@ -1,5 +1,6 @@
 ---
 tagName: sl-breadcrumb
+added: 2026-09-27
 archived: true
 stars: 13834
 description: "Breadcrumbs provide a group of links so users can easily navigate a website's hierarchy."

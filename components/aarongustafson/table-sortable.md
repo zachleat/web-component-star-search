@@ -1,5 +1,6 @@
 ---
 tagName: table-sortable
+added: 2026-09-27
 stars: 15
 description: A web component to enable users to sort table data by clicking on column headers.
 category: Data

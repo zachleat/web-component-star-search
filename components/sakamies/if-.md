@@ -1,5 +1,6 @@
 ---
 tagName: if-
+added: 2026-09-27
 stars: 2
 description: "Shows or hides content based on input element values, with companion or- and else- elements."
 category: Forms

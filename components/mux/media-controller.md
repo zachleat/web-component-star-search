@@ -1,5 +1,6 @@
 ---
 tagName: media-controller
+added: 2026-09-27
 stars: 2751
 description: Media Controller should not mimic the HTMLMediaElement API.
 category: Media

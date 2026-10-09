@@ -1,5 +1,6 @@
 ---
 tagName: nve-drawer-footer
+added: 2026-09-28
 stars: 88
 description: Provides a fixed action area at the bottom of a drawer for primary actions such as save or cancel.
 category: Overlays

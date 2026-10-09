@@ -1,5 +1,6 @@
 ---
 tagName: nve-tabs
+added: 2026-09-28
 stars: 88
 description: "Tabs provide a selection UX, typically used for swapping content shown on a page, or within a navigation context."
 category: Navigation

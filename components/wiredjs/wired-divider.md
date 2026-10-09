@@ -1,0 +1,17 @@
+---
+tagName: wired-divider
+added: 2026-10-08
+description: Collection of hand-drawn sketchy web components
+category: Layout
+builtWith: Lit
+jsSize: 830
+library:
+  name: Wired Elements
+  url: https://wiredjs.com/
+package: wired-elements
+author: Preet Shihn
+repository: https://github.com/wiredjs/wired-elements
+documentation: "https://github.com/wiredjs/wired-elements#readme"
+license: MIT
+authorUrl: https://github.com/pshihn
+---

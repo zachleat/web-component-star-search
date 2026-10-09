@@ -1,5 +1,6 @@
 ---
 tagName: nve-gauge
+added: 2026-09-28
 stars: 88
 description: Use a gauge to show system resource usage.
 category: Utilities

@@ -1,5 +1,6 @@
 ---
 tagName: form-dropzone
+added: 2026-10-08
 description: "Progressively enhances an associated label and file input with a Light DOM drag-and-drop surface, accessible announcements, and optional image previews."
 category: Forms
 builtWith: Vanilla

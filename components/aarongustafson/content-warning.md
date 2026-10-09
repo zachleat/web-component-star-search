@@ -1,5 +1,6 @@
 ---
 tagName: content-warning
+added: 2026-09-27
 stars: 1
 description: A web component for block and inline content warnings.
 category: Content

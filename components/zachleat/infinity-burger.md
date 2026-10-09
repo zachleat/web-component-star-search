@@ -1,5 +1,6 @@
 ---
 tagName: infinity-burger
+added: 2026-09-27
 stars: 35
 description: A new kind of hamburger menu.
 category: Navigation

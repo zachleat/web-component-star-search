@@ -1,5 +1,6 @@
 ---
 tagName: sl-menu
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Menus provide a list of options for the user to choose from.

@@ -1,5 +1,6 @@
 ---
 tagName: nve-search
+added: 2026-09-28
 stars: 88
 description: A search is a control that enables users to enter text to search.
 category: Utilities

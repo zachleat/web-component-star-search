@@ -1,5 +1,6 @@
 ---
 tagName: nve-grid-footer
+added: 2026-09-28
 stars: 88
 description: Grid footer displays contextual information or user actions such as pagination.
 category: Layout

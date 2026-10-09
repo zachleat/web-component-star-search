@@ -1,5 +1,6 @@
 ---
 tagName: color-palette
+added: 2026-09-27
 description: "Shows the palette of prominent colors beneath an image, using Color Thief."
 category: Media
 builtWith: Vanilla

@@ -1,5 +1,6 @@
 ---
 tagName: sl-carousel
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Carousels display an arbitrary number of content slides along a horizontal or vertical axis.

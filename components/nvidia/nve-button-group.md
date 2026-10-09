@@ -1,5 +1,6 @@
 ---
 tagName: nve-button-group
+added: 2026-09-28
 stars: 88
 description: A button group organizes related buttons and can support either mutually exclusive single or multi selection. Prefer usage within toolbars.
 category: Actions

@@ -1,5 +1,6 @@
 ---
 tagName: nve-avatar
+added: 2026-09-28
 stars: 88
 description: Avatar represents a user/bot within a UI. Typically with text or image content.
 category: Media

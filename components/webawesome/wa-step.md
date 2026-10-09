@@ -1,5 +1,6 @@
 ---
 tagName: wa-step
+added: 2026-09-28
 stars: 1348
 description: "Steps represent a single stage inside a `<wa-stepper>`, showing its position, label, and status."
 category: Navigation

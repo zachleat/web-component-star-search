@@ -1,5 +1,6 @@
 ---
 tagName: nve-grid-placeholder
+added: 2026-09-28
 stars: 88
 description: Placeholder displays a message while data loads for the grid or shows empty states for datasets.
 category: Layout

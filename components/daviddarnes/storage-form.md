@@ -1,5 +1,6 @@
 ---
 tagName: storage-form
+added: 2026-09-27
 stars: 35
 description: A Web Component that allows you to submit data to local storage
 category: Forms

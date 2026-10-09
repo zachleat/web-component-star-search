@@ -1,5 +1,6 @@
 ---
 tagName: sl-drawer
+added: 2026-09-27
 archived: true
 stars: 13834
 description: Drawers slide in from a container to expose additional options and information.

@@ -1,5 +1,6 @@
 ---
 tagName: nve-page-header
+added: 2026-09-28
 stars: 88
 description: An element that appears across the top of all pages containing the application name and primary navigation.
 category: Layout

@@ -1,5 +1,6 @@
 ---
 tagName: bluesky-replies
+added: 2026-09-27
 stars: 9
 description: A Web Component to display Bluesky post replies
 category: Content

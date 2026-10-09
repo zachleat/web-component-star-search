@@ -1,5 +1,6 @@
 ---
 tagName: bluesky-post
+added: 2026-09-27
 stars: 26
 description: A Web Component to display Bluesky posts and their metadata
 category: Content

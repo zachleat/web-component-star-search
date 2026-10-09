@@ -1,5 +1,6 @@
 ---
 tagName: dis-closure
+added: 2026-09-28
 description: A disclosure custom element that’s friendly to heading elements.
 category: Layout
 builtWith: Vanilla
