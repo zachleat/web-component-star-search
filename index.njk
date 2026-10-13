@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 ---
 <h1>Find a custom element</h1>
-<p class="lede">A searchable catalog of standalone web components.</p>
+<p class="lede">A searchable catalog of web components.</p>
 
 {% set categoryCounts = collections.components | countBy("category") %}
 {% set sourceCounts = collections.components | countBy("source") %}
@@ -68,7 +68,7 @@ layout: layouts/base.njk
 		<div class="search-options" hidden>
 		<label class="search-check"><input type="checkbox" name="demo" value="1" form="search-form"> With demo</label>
 		<label class="search-check"><input type="checkbox" name="npm" value="1" form="search-form"> On npm</label>
-		<label class="search-check"><input type="checkbox" name="independent" value="1" form="search-form"> Independent</label>
+		<label class="search-check"><input type="checkbox" name="independent" value="1" form="search-form"> Standalone</label>
 		<label class="search-sort">
 			<span>Sort</span>
 			<select name="sort" form="search-form">
