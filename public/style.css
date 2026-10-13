@@ -169,6 +169,8 @@ component-of-the-week li { border: 2px solid var(--accent); }
 .source-list ul { list-style: none; display: flex; flex-wrap: wrap; gap: .375rem; margin: 0; padding: 0; }
 .source-pill { display: inline-flex; align-items: center; gap: .25em; padding: .125em .425em .125em .25em; font-size: .8125rem; color: var(--text); text-decoration: none; border: 1px solid var(--border); border-radius: 2em; }
 .source-pill:hover { border-color: var(--accent); }
+button.source-pill { font: inherit; font-size: .8125rem; background: none; cursor: pointer; }
+pill-clamp { display: block; }
 .source-pill:not(:has(img, svg)) { padding-left: .625em; }
 .source-pill .avatar { margin-right: .125em; }
 .source-pill .count { font-size: .6875rem; color: var(--muted); font-variant-numeric: tabular-nums; }
