@@ -3,7 +3,6 @@
 	--muted: #5b5b66;
 	--bg: #fdfcfa;
 	--surface: #f2efe9;
-	--surface-alt: #e9e5dc;
 	--accent: #7a3cff;
 	--border: #ddd8cf;
 	color-scheme: light dark;
@@ -16,7 +15,6 @@
 		--muted: #a4a3ad;
 		--bg: #16151a;
 		--surface: #24232b;
-		--surface-alt: #1e1d24;
 		--accent: #b594ff;
 		--border: #3a3842;
 	}
@@ -27,7 +25,6 @@
 	--muted: #a4a3ad;
 	--bg: #16151a;
 	--surface: #24232b;
-	--surface-alt: #1e1d24;
 	--accent: #b594ff;
 	--border: #3a3842;
 }
@@ -91,8 +88,8 @@ component-search[aria-busy] .search-status { opacity: .6; }
 	gap: .75rem;
 }
 .component-list li { padding: .75rem 1rem; background: var(--surface); border-radius: .5rem; }
-/* Alternates among visible cards, so filtering keeps the pattern. */
-.component-list li:nth-child(even of :not([hidden])) { background: var(--surface-alt); }
+/* Skips layout and paint for offscreen cards. */
+#components > li { content-visibility: auto; contain-intrinsic-size: auto 12rem; }
 .component-list a { font-weight: 600; overflow-wrap: anywhere; }
 .component-list .source { display: block; font-size: .8125rem; color: var(--muted); }
 .component-list .source a { font-weight: 400; color: inherit; text-decoration-color: var(--border); }
