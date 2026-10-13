@@ -1,0 +1,17 @@
+---
+tagName: slab-radio-group
+added: 2026-10-13
+description: "A set of Radios with one label, one value, and exactly one checked."
+category: Forms
+builtWith: Lit
+jsSize: 4571
+library:
+  name: Slab
+  url: https://slab-elements.dev/
+package: slab-elements
+author: Tony Ward
+repository: https://github.com/ynotdraw/slab-elements
+documentation: https://slab-elements.dev/components/radio-group/
+license: Apache-2.0
+authorUrl: https://github.com/ynotdraw
+---
