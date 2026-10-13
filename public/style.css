@@ -6,6 +6,7 @@
 	--accent: #7a3cff;
 	--border: #ddd8cf;
 	color-scheme: light dark;
+	overflow-y: scroll;
 }
 /* Dark theme follows the system preference unless <solar-eclipse-toggle> sets data-theme. */
 @media (prefers-color-scheme: dark) {
