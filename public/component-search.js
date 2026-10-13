@@ -125,7 +125,7 @@ class ComponentSearch extends HTMLElement {
 				&& (!values.builtWith || item.dataset.builtWith === values.builtWith)
 				&& (!values.demo || "demo" in item.dataset)
 				&& (!values.npm || "npm" in item.dataset)
-				&& (!values.indie || "indie" in item.dataset);
+				&& (!values.independent || "independent" in item.dataset);
 			item.hidden = !match;
 			count += match ? 1 : 0;
 		}

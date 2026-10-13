@@ -150,7 +150,7 @@ svg.avatar-fa-web-awesome { color: #f36944; }
 .card-sizes .is-empty { opacity: .4; }
 .notice { padding: .75rem 1rem; background: var(--surface); border-left: 4px solid #f36944; border-radius: .25rem; }
 .notice svg { color: #f36944; }
-.component-list .card-superseded { align-self: flex-start; display: inline-flex; align-items: center; gap: .375em; margin-bottom: .75rem; padding: .25em .625em; font-size: .75rem; font-weight: 400; color: var(--text); text-decoration: none; border: 1px solid #f36944; border-radius: .375rem; }
+.component-list .card-superseded { align-self: flex-start; display: inline-flex; align-items: center; gap: .375em; margin-top: .5rem; padding: .25em .625em; font-size: .75rem; font-weight: 400; color: var(--text); text-decoration: none; border: 1px solid #f36944; border-radius: .375rem; }
 .component-list .card-superseded:hover { background: color-mix(in srgb, #f36944 12%, transparent); }
 .card-superseded svg { color: #f36944; }
 
