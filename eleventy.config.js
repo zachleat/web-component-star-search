@@ -128,6 +128,13 @@ export default function (eleventyConfig) {
 		return { score: Math.max(0, Math.min(5, Math.floor(value))), value, monthly, stars };
 	});
 
+	// Most popular first, matching the default client-side sort so the first load needs no reordering.
+	eleventyConfig.addFilter("byPopularity", (entries, downloads) => {
+		let popularity = eleventyConfig.getFilter("popularity");
+		let value = ({ data }) => data.archived || data.deprecated || data.supersededBy ? -Infinity : popularity(data.package && downloads[data.package], data.stars)?.value ?? -Infinity;
+		return entries.map((entry) => ({ entry, value: value(entry) })).sort((a, b) => b.value - a.value || 0).map(({ entry }) => entry);
+	});
+
 	eleventyConfig.addFilter("date", (value) => new Date(value).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric", timeZone: "UTC" }));
 
 	// Shorthand age as of the build, e.g. "3d", "5mo", "2y".

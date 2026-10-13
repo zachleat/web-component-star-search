@@ -86,7 +86,8 @@ class ComponentSearch extends HTMLElement {
 		let key = order?.startsWith("size") ? "size" : ["published", "added"].includes(order) ? order : order === "name" ? undefined : "popular";
 		let direction = order === "size-asc" ? 1 : -1;
 		let toNumber = (value) => ["published", "added"].includes(key) ? Date.parse(value) : Number(value);
-		let sorted = this.items.map((item, index) => ({ item, index, value: key ? toNumber(item.dataset[key]) : NaN }));
+		// The cards render in popularity order, so ties and the name sort use their name order index.
+		let sorted = this.items.map((item) => ({ item, index: Number(item.dataset.index), value: key ? toNumber(item.dataset[key]) : NaN }));
 		sorted.sort((a, b) => {
 			if (!key || (Number.isNaN(a.value) && Number.isNaN(b.value))) {
 				return a.index - b.index;
@@ -96,7 +97,12 @@ class ComponentSearch extends HTMLElement {
 			}
 			return (a.value - b.value) * direction || a.index - b.index;
 		});
-		this.items[0].parentElement.append(...sorted.map(({ item }) => item));
+		let list = this.items[0].parentElement;
+		// Skip moving the cards when they’re already in order, which avoids a full relayout.
+		if (sorted.every(({ item }, i) => list.children[i] === item)) {
+			return;
+		}
+		list.append(...sorted.map(({ item }) => item));
 	}
 
 	async update() {
@@ -124,9 +130,9 @@ class ComponentSearch extends HTMLElement {
 			count += match ? 1 : 0;
 		}
 		this.sort(values.sort);
-		// Mark filter links that match the current filters.
-		for (let link of document.querySelectorAll("a[data-filter]")) {
-			let params = [...new URL(link.href).searchParams];
+		// Mark filter pills that match the current filters; the links on cards are skipped since there are thousands.
+		this.pills ||= [...document.querySelectorAll(".source-pill[data-filter]")].map((link) => ({ link, params: [...new URL(link.href).searchParams] }));
+		for (let { link, params } of this.pills) {
 			link.toggleAttribute("aria-current", params.length > 0 && params.every(([name, value]) => values[name] === value));
 		}
 		this.status.textContent = `${count} of ${this.items.length} components`;
