@@ -11,19 +11,15 @@ layout: layouts/base.njk
 
 <div class="home-filters">
 <nav class="source-list" aria-labelledby="sources-heading">
-	<h2 id="sources-heading">Sources</h2>
 	{%- set sources = collections.components | sources %}
-	{%- set fewer = sources | selectattr("count", "le", 2) | length %}
-	<pill-clamp rows="4">
+	<h2 id="sources-heading">Sources <span class="count">{{ sources | length }}</span></h2>
+	<div class="pill-clamp">
 	<ul>
 		{%- for source in sources %}{% if source.count > 2 %}
 		<li><a href="/?source={{ source.name | urlencode }}" class="source-pill" data-filter>{% if source.url %}{{ source.url | avatar | safe }}{% endif %}{{ source.name }} <span class="count">{{ source.count }}</span></a></li>
 		{%- endif %}{% endfor %}
 	</ul>
-	</pill-clamp>
-	{%- if fewer %}
-	<p class="source-more">+ {{ fewer }} more sources with one or two components</p>
-	{%- endif %}
+	</div>
 </nav>
 <nav class="source-list category-list" aria-labelledby="categories-heading">
 	<h2 id="categories-heading">Categories</h2>
@@ -152,4 +148,3 @@ layout: layouts/base.njk
 
 <script type="module" src="/component-search.js"></script>
 <script type="module" src="/component-of-the-week.js"></script>
-<script type="module" src="/pill-clamp.js"></script>
