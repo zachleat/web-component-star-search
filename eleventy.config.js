@@ -95,6 +95,9 @@ export default function (eleventyConfig) {
 	});
 
 	// Preview images for the demo, docs and source links, skipping CodePen and duplicate images.
+	// Unlike dictsort, this sorts accented names (e.g. André) alongside their unaccented neighbors.
+	eleventyConfig.addFilter("alphabetical", (counts) => Object.entries(counts).sort(([a], [b]) => a.localeCompare(b, undefined, { sensitivity: "base" })));
+
 	eleventyConfig.addFilter("previews", (links) => {
 		let previews = [];
 		for (let [label, url] of links) {

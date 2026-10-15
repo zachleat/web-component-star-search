@@ -55,7 +55,7 @@ layout: layouts/base.njk
 			<span>Source</span>
 			<select name="source">
 				<option value="">All sources</option>
-				{%- for source, count in sourceCounts | dictsort %}{% if count > 1 %}
+				{%- for source, count in sourceCounts | alphabetical %}{% if count > 1 %}
 				<option value="{{ source }}">{{ source }} ({{ count }})</option>
 				{%- endif %}{% endfor %}
 			</select>

@@ -63,7 +63,8 @@ class ComponentSearch extends HTMLElement {
 			return;
 		}
 		if (field.tagName === "SELECT" && value && ![...field.options].some((option) => option.value === value)) {
-			field.add(new Option(value, value));
+			let before = [...field.options].find((option) => option.value && option.value.localeCompare(value, undefined, { sensitivity: "base" }) > 0);
+			field.add(new Option(value, value), before);
 		}
 		field.value = value;
 	}
