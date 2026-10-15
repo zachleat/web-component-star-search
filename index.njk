@@ -3,6 +3,7 @@ layout: layouts/base.njk
 ---
 <h1>Find a custom element</h1>
 <p class="lede">A searchable catalog of web components.</p>
+<p class="bsky"><a href="https://bsky.app/starter-pack/zachleat.com/3lahui7zefw2s" class="bsky-callout"><i class="fa-brands fa-bluesky"></i>Follow web component authors with the Bluesky Starter Pack</a></p>
 
 {% set categoryCounts = collections.components | countBy("category") %}
 {% set sourceCounts = collections.components | countBy("source") %}

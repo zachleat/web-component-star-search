@@ -32,7 +32,7 @@
 :root[data-theme="light"] { color-scheme: light; }
 * { box-sizing: border-box; }
 /* Everything stays at a readable width except the card grid, which spans the viewport. */
-main > :not(.component-list, .home-intro, h1, .lede, component-search) { max-width: 60rem; margin-inline: auto; }
+main > :not(.component-list, .home-intro, h1, .lede, .bsky, component-search) { max-width: 60rem; margin-inline: auto; }
 body {
 	margin: 0 auto;
 	padding: 0 1rem;
@@ -46,6 +46,8 @@ code { font-family: ui-monospace, monospace; }
 h1 { line-height: 1.15; overflow-wrap: anywhere; }
 .site-footer { margin-block: 3rem 2rem; padding-top: 1rem; border-top: 1px solid var(--border); color: var(--muted); font-size: .875rem; }
 .lede { font-size: 1.125rem; color: var(--muted); }
+.bsky-callout { display: inline-flex; align-items: center; gap: .5em; padding: .5em 1em; font-weight: 600; color: #fff; background: #1185fe; border-radius: 2em; text-decoration: none; }
+.bsky-callout:hover { background: #0a6fd8; }
 [hidden] { display: none !important; }
 component-search { display: block; margin-block: 1.5rem 1rem; }
 .search-form { display: flex; flex-wrap: wrap; gap: .75rem; max-width: 60rem; }
