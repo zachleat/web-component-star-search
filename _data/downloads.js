@@ -1,4 +1,4 @@
-// Weekly npm downloads and monthly jsDelivr hits per package, cached for a day.
+// Weekly npm downloads and monthly jsDelivr hits per package, cached for two weeks.
 import fs from "node:fs";
 import path from "node:path";
 import Fetch from "@11ty/eleventy-fetch";
@@ -7,7 +7,7 @@ const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 async function getJson(url, retries = 3) {
 	try {
-		return await Fetch(url, { duration: "1d", type: "json" });
+		return await Fetch(url, { duration: "2w", type: "json" });
 	} catch (error) {
 		// npm’s downloads API rate limits bursts; back off and retry.
 		if (retries && /\(429\)/.test(error.message)) {

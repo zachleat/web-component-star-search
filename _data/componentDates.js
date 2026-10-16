@@ -1,14 +1,16 @@
 // When each library component last changed: the earliest release whose files for that component match the latest stable release.
 // Compares jsDelivr file sizes across versions (hashes churn on embedded version strings and chunk names); old version listings never change, so they’re cached indefinitely.
+// Each library’s result is cached until its latest version or component list changes.
 import fs from "node:fs";
 import path from "node:path";
+import { AssetCache } from "@11ty/eleventy-fetch";
 import { fetchJson, registryDoc, stableVersions, packagesInCatalog } from "../lib/registry.js";
 
 const MAX_VERSIONS = 60;
 const skipFile = /(^|\/)(test|tests|internal|stories|react|cjs|ssr)\/|\.(d\.ts|map)$|\.examples?\.|\.bench\./;
 
 function listing(pkg, version, isLatest) {
-	return fetchJson(`https://data.jsdelivr.com/v1/packages/npm/${pkg}@${version}?structure=flat`, isLatest ? "1d" : "*");
+	return fetchJson(`https://data.jsdelivr.com/v1/packages/npm/${pkg}@${version}?structure=flat`, isLatest ? "2w" : "*");
 }
 
 // The component’s module, plus its sibling files when it has a folder of its own.
@@ -28,6 +30,55 @@ function keyFiles(tagName, files) {
 	return siblings.length > 15 ? [module] : siblings;
 }
 
+// `complete` is false when an older listing fails to load, so the partial result isn’t cached.
+async function libraryDates(pkg, tags, doc, versions) {
+	let latest = await listing(pkg, versions[0], true);
+	if (!latest?.files) {
+		return;
+	}
+	let hashesOf = (list) => new Map(list.files.map((f) => [f.name, f.size]));
+	let latestHashes = hashesOf(latest);
+	let pending = new Map();
+	for (let tag of tags) {
+		let keys = keyFiles(tag, [...latestHashes.keys()]);
+		if (keys) {
+			pending.set(tag, { keys, signature: keys.map((k) => latestHashes.get(k)).join() });
+		}
+	}
+	let changed = new Map();
+	let complete = true;
+	for (let i = 1; i < versions.length && pending.size; i++) {
+		let older = await listing(pkg, versions[i]);
+		if (!older?.files) {
+			complete = false;
+			break;
+		}
+		let hashes = hashesOf(older);
+		for (let [tag, { keys, signature }] of pending) {
+			if (keys.map((k) => hashes.get(k)).join() !== signature) {
+				changed.set(tag, versions[i - 1]);
+				pending.delete(tag);
+			}
+		}
+	}
+	// Unchanged across every version checked: date it to the oldest one.
+	for (let tag of pending.keys()) {
+		changed.set(tag, versions.at(-1));
+	}
+	// When nearly every component “changed” in the latest release, the build output is too noisy to trust.
+	let inLatest = [...changed.values()].filter((version) => version === versions[0]).length;
+	if (changed.size > 5 && inLatest / changed.size > 0.8) {
+		return { dates: {}, complete };
+	}
+	let dates = {};
+	for (let [tag, version] of changed) {
+		if (doc.time?.[version]) {
+			dates[`${pkg}#${tag}`] = { date: doc.time[version], version };
+		}
+	}
+	return { dates, complete };
+}
+
 export default async function () {
 	let libraries = new Map();
 	for (let entry of packagesInCatalog(fs, path).filter((entry) => entry.library)) {
@@ -41,47 +92,18 @@ export default async function () {
 		if (versions.length < 2) {
 			return;
 		}
-		let latest = await listing(pkg, versions[0], true);
-		if (!latest?.files) {
+		let key = `${versions[0]} ${[...tags].sort().join()}`;
+		let cache = new AssetCache(`componentDates-${pkg}`);
+		let cached = cache.isCacheValid("*") && await cache.getCachedValue();
+		if (cached?.key === key) {
+			Object.assign(dates, cached.dates);
 			return;
 		}
-		let hashesOf = (list) => new Map(list.files.map((f) => [f.name, f.size]));
-		let latestHashes = hashesOf(latest);
-		let pending = new Map();
-		for (let tag of tags) {
-			let keys = keyFiles(tag, [...latestHashes.keys()]);
-			if (keys) {
-				pending.set(tag, { keys, signature: keys.map((k) => latestHashes.get(k)).join() });
-			}
+		let result = await libraryDates(pkg, tags, doc, versions);
+		if (result?.complete) {
+			await cache.save({ key, dates: result.dates }, "json");
 		}
-		let changed = new Map();
-		for (let i = 1; i < versions.length && pending.size; i++) {
-			let older = await listing(pkg, versions[i]);
-			if (!older?.files) {
-				break;
-			}
-			let hashes = hashesOf(older);
-			for (let [tag, { keys, signature }] of pending) {
-				if (keys.map((k) => hashes.get(k)).join() !== signature) {
-					changed.set(tag, versions[i - 1]);
-					pending.delete(tag);
-				}
-			}
-		}
-		// Unchanged across every version checked: date it to the oldest one.
-		for (let tag of pending.keys()) {
-			changed.set(tag, versions.at(-1));
-		}
-		// When nearly every component “changed” in the latest release, the build output is too noisy to trust.
-		let inLatest = [...changed.values()].filter((version) => version === versions[0]).length;
-		if (changed.size > 5 && inLatest / changed.size > 0.8) {
-			return;
-		}
-		for (let [tag, version] of changed) {
-			if (doc.time?.[version]) {
-				dates[`${pkg}#${tag}`] = { date: doc.time[version], version };
-			}
-		}
+		Object.assign(dates, result?.dates);
 	}));
 	return dates;
 }

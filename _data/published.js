@@ -1,4 +1,4 @@
-// Latest stable version, its publish date and the latest tag per npm package, cached for a day.
+// Latest stable version, its publish date and the latest tag per npm package, cached for two weeks.
 import fs from "node:fs";
 import path from "node:path";
 import { registryDoc, stableVersions, packagesInCatalog } from "../lib/registry.js";

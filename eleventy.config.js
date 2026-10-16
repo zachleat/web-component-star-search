@@ -162,8 +162,11 @@ export default function (eleventyConfig) {
 
 	eleventyConfig.addFilter("npmUrl", (name) => `https://www.npmjs.com/package/${name}`);
 
-	// Index this build’s pages rather than the output folder, so deleted entries don’t linger in search.
-	eleventyConfig.on("eleventy.after", async ({ directories, results }) => {
+	// Index this build’s pages rather than the output folder, so deleted entries don’t linger in search; skipped while serving.
+	eleventyConfig.on("eleventy.after", async ({ directories, results, runMode }) => {
+		if (runMode !== "build") {
+			return;
+		}
 		let { index } = await pagefind.createIndex();
 		for (let { url, content, outputPath } of results) {
 			if (outputPath?.endsWith(".html")) {
