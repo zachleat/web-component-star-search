@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "eleventy",
-    "start": "eleventy --serve --quiet",
+    "start": "eleventy --serve --quiet --incremental",
     "import:cem": "node scripts/import-cem.js",
     "import:npm": "node scripts/import-npm.js",
     "categorize": "node scripts/categorize.js",
