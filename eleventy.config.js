@@ -19,6 +19,9 @@ export default function (eleventyConfig) {
 		defaultAttributes: { "aria-hidden": "true", width: "1em", height: "1em" },
 	});
 
+	// Cards rendered on the home page before the rest load.
+	eleventyConfig.addGlobalData("cardBatch", 200);
+
 	eleventyConfig.addPassthroughCopy({ public: "/" });
 	eleventyConfig.addPassthroughCopy({
 		"node_modules/@zachleat/solar-eclipse-toggle/solar-eclipse-toggle.js": "/static/solar-eclipse-toggle.js",

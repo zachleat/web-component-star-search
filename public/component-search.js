@@ -3,7 +3,18 @@ class ComponentSearch extends HTMLElement {
 	connectedCallback() {
 		this.form = this.querySelector("form");
 		this.status = this.querySelector("[data-status]");
-		this.items = [...document.querySelectorAll(this.getAttribute("items"))];
+		this.list = document.querySelector(this.getAttribute("list"));
+		this.more = document.querySelector(this.getAttribute("more"));
+		this.batch = Number(this.getAttribute("batch")) || 200;
+		this.cards = this.load([...this.list.children]);
+		this.moreButton = this.more.querySelector("button");
+		this.hiddenCount = this.more.querySelector("[data-hidden-count]");
+		this.moreButton.addEventListener("click", () => {
+			let first = this.list.children.length;
+			this.render(this.limit + this.batch);
+			// Keyboard users continue from the first new card.
+			this.list.children[first]?.querySelector("a")?.focus();
+		});
 		this.form.hidden = false;
 		let options = this.querySelector(".search-options");
 		options.hidden = false;
@@ -52,6 +63,43 @@ class ComponentSearch extends HTMLElement {
 		this.update();
 	}
 
+	// The page renders the first batch of cards; the rest load separately to keep the page light.
+	async load(initial) {
+		try {
+			let response = await fetch(this.getAttribute("src"));
+			if (!response.ok) {
+				throw new Error(`${response.status} loading cards`);
+			}
+			let doc = new DOMParser().parseFromString(await response.text(), "text/html");
+			// Icons reference shared symbols, so copy over any the page doesn’t have yet.
+			for (let symbol of doc.querySelectorAll("symbol[id]")) {
+				if (!document.getElementById(symbol.id)) {
+					document.body.append(symbol.closest("svg"));
+				}
+			}
+			return [...initial, ...doc.querySelector("ul").children];
+		} catch (error) {
+			console.error(error);
+			return initial;
+		}
+	}
+
+	// Shows the first `limit` matching cards.
+	render(limit) {
+		this.limit = limit;
+		let visible = this.matches.slice(0, limit);
+		let remaining = Math.max(this.matches.length - limit, 0);
+		this.more.hidden = !remaining;
+		this.moreButton.disabled = false;
+		this.moreButton.textContent = `Show ${Math.min(this.batch, remaining)} more components`;
+		this.hiddenCount.textContent = `${remaining} still hidden`;
+		// Skip replacing the cards when they’re already shown, which avoids a full relayout.
+		if (visible.length === this.list.children.length && visible.every((item, i) => this.list.children[i] === item)) {
+			return;
+		}
+		this.list.replaceChildren(...visible);
+	}
+
 	// Selects only list common values, so add an option on demand (e.g. a source with one component).
 	setValue(name, value) {
 		let field = this.form.elements[name];
@@ -83,12 +131,12 @@ class ComponentSearch extends HTMLElement {
 	}
 
 	// Reorders the cards (most popular by default); items without a value sort last, and ties keep name order.
-	sort(order) {
+	sort(items, order) {
 		let key = order?.startsWith("size") ? "size" : ["published", "added"].includes(order) ? order : order === "name" ? undefined : "popular";
 		let direction = order === "size-asc" ? 1 : -1;
 		let toNumber = (value) => ["published", "added"].includes(key) ? Date.parse(value) : Number(value);
 		// The cards render in popularity order, so ties and the name sort use their name order index.
-		let sorted = this.items.map((item) => ({ item, index: Number(item.dataset.index), value: key ? toNumber(item.dataset[key]) : NaN }));
+		let sorted = items.map((item) => ({ item, index: Number(item.dataset.index), value: key ? toNumber(item.dataset[key]) : NaN }));
 		sorted.sort((a, b) => {
 			if (!key || (Number.isNaN(a.value) && Number.isNaN(b.value))) {
 				return a.index - b.index;
@@ -98,12 +146,7 @@ class ComponentSearch extends HTMLElement {
 			}
 			return (a.value - b.value) * direction || a.index - b.index;
 		});
-		let list = this.items[0].parentElement;
-		// Skip moving the cards when they’re already in order, which avoids a full relayout.
-		if (sorted.every(({ item }, i) => list.children[i] === item)) {
-			return;
-		}
-		list.append(...sorted.map(({ item }) => item));
+		return sorted.map(({ item }) => item);
 	}
 
 	async update() {
@@ -113,30 +156,26 @@ class ComponentSearch extends HTMLElement {
 		this.run = run;
 		this.setAttribute("aria-busy", "true");
 
-		let urls = await this.matchingUrls(query);
+		let [items, urls] = await Promise.all([this.cards, this.matchingUrls(query)]);
 		if (run !== this.run) {
 			return;
 		}
 
-		let count = 0;
-		for (let item of this.items) {
-			let match = (!urls || urls.has(item.dataset.url))
-				&& (!values.category || item.dataset.category === values.category)
-				&& (!values.source || item.dataset.source === values.source)
-				&& (!values.builtWith || item.dataset.builtWith === values.builtWith)
-				&& (!values.demo || "demo" in item.dataset)
-				&& (!values.npm || "npm" in item.dataset)
-				&& (!values.independent || "independent" in item.dataset);
-			item.hidden = !match;
-			count += match ? 1 : 0;
-		}
-		this.sort(values.sort);
+		let matches = items.filter((item) => (!urls || urls.has(item.dataset.url))
+			&& (!values.category || item.dataset.category === values.category)
+			&& (!values.source || item.dataset.source === values.source)
+			&& (!values.builtWith || item.dataset.builtWith === values.builtWith)
+			&& (!values.demo || "demo" in item.dataset)
+			&& (!values.npm || "npm" in item.dataset)
+			&& (!values.independent || "independent" in item.dataset));
+		this.matches = this.sort(matches, values.sort);
+		this.render(this.batch);
 		// Mark filter pills that match the current filters; the links on cards are skipped since there are thousands.
 		this.pills ||= [...document.querySelectorAll(".source-pill[data-filter]")].map((link) => ({ link, params: [...new URL(link.href).searchParams] }));
 		for (let { link, params } of this.pills) {
 			link.toggleAttribute("aria-current", params.length > 0 && params.every(([name, value]) => values[name] === value));
 		}
-		this.status.textContent = `${count} of ${this.items.length} components`;
+		this.status.textContent = `${matches.length} of ${items.length} components`;
 		this.removeAttribute("aria-busy");
 
 		let params = new URLSearchParams(Object.entries(values).filter(([, value]) => value.trim()));

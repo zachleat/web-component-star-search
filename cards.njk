@@ -1,0 +1,10 @@
+---
+permalink: /cards.html
+eleventyExcludeFromCollections: true
+---
+<ul>
+	{%- for entry in (collections.components | byPopularity(downloads)).slice(cardBatch) %}
+	{% include "component-card.njk" %}
+	{%- endfor %}
+</ul>
+{% getBundle "fontawesome" %}

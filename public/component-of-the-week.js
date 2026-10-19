@@ -17,8 +17,11 @@ class ComponentOfTheWeek extends HTMLElement {
 		return `${day.getUTCFullYear()}-W${week}`;
 	}
 
-	connectedCallback() {
-		let items = document.querySelectorAll(this.getAttribute("items"));
+	// Picks from every card, including the ones component-search loads after the page.
+	async connectedCallback() {
+		await customElements.whenDefined("component-search");
+		let cards = await document.querySelector("component-search").cards;
+		let items = cards.filter((card) => card.matches(this.getAttribute("items")));
 		if (!items.length) {
 			return;
 		}
