@@ -77,6 +77,7 @@ component-search { display: block; margin-block: 1.5rem 1rem; }
 .search-reset { align-self: flex-end; display: inline-flex; align-items: center; gap: .375em; font: inherit; font-size: 1rem; padding: .5em .75em; color: var(--text); background: var(--surface); border: 1px solid var(--border); border-radius: .375rem; cursor: pointer; }
 .search-reset:hover { border-color: var(--accent); }
 .show-more { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: .5rem 1rem; margin-top: 1.5rem; color: var(--muted); }
+.show-more a { text-decoration: none; }
 .show-more button:disabled { opacity: .5; cursor: not-allowed; }
 .search-meta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 1rem; margin-block: .75rem; }
 .search-status { margin: 0; color: var(--muted); font-size: .875rem; }

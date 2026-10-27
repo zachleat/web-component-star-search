@@ -3,7 +3,7 @@ permalink: /cards.html
 eleventyExcludeFromCollections: true
 ---
 <ul>
-	{%- for entry in (collections.components | byPopularity(downloads)).slice(cardBatch) %}
+	{%- for entry in collections.popularComponents.slice(cardBatch) %}
 	{% include "component-card.njk" %}
 	{%- endfor %}
 </ul>

@@ -19,7 +19,7 @@ export default function (eleventyConfig) {
 		defaultAttributes: { "aria-hidden": "true", width: "1em", height: "1em" },
 	});
 
-	// Cards rendered on the home page before the rest load.
+	// Cards rendered on the home page before the rest load; keep in sync with the pagination size in index.njk.
 	eleventyConfig.addGlobalData("cardBatch", 200);
 
 	eleventyConfig.addPassthroughCopy({ public: "/" });
@@ -32,6 +32,17 @@ export default function (eleventyConfig) {
 		return collectionApi
 			.getFilteredByGlob("components/**/*.md")
 			.sort((a, b) => a.data.tagName.localeCompare(b.data.tagName));
+	});
+
+	// Most popular first, matching the default client-side sort so the first load needs no reordering.
+	eleventyConfig.addCollection("popularComponents", (collectionApi) => {
+		let entries = collectionApi
+			.getFilteredByGlob("components/**/*.md")
+			.sort((a, b) => a.data.tagName.localeCompare(b.data.tagName));
+		let downloads = entries[0]?.data.downloads || {};
+		let popularity = eleventyConfig.getFilter("popularity");
+		let value = ({ data }) => data.archived || data.deprecated || data.supersededBy ? -Infinity : popularity(data.package && downloads[data.package], data.stars)?.value ?? -Infinity;
+		return entries.map((entry) => ({ entry, value: value(entry) })).sort((a, b) => b.value - a.value || 0).map(({ entry }) => entry);
 	});
 
 	eleventyConfig.addCollection("libraries", (collectionApi) => {
@@ -134,13 +145,6 @@ export default function (eleventyConfig) {
 		return { score: Math.max(0, Math.min(5, Math.floor(value))), value, monthly, stars };
 	});
 
-	// Most popular first, matching the default client-side sort so the first load needs no reordering.
-	eleventyConfig.addFilter("byPopularity", (entries, downloads) => {
-		let popularity = eleventyConfig.getFilter("popularity");
-		let value = ({ data }) => data.archived || data.deprecated || data.supersededBy ? -Infinity : popularity(data.package && downloads[data.package], data.stars)?.value ?? -Infinity;
-		return entries.map((entry) => ({ entry, value: value(entry) })).sort((a, b) => b.value - a.value || 0).map(({ entry }) => entry);
-	});
-
 	eleventyConfig.addFilter("date", (value) => new Date(value).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric", timeZone: "UTC" }));
 
 	// Shorthand age as of the build, e.g. "3d", "5mo", "2y".
@@ -172,7 +176,8 @@ export default function (eleventyConfig) {
 		}
 		let { index } = await pagefind.createIndex();
 		for (let { url, content, outputPath } of results) {
-			if (outputPath?.endsWith(".html")) {
+			// Paginated home pages only repeat the component pages’ content.
+			if (outputPath?.endsWith(".html") && !url.startsWith("/page/")) {
 				await index.addHTMLFile({ url, content });
 			}
 		}

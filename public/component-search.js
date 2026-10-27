@@ -7,7 +7,14 @@ class ComponentSearch extends HTMLElement {
 		this.more = document.querySelector(this.getAttribute("more"));
 		this.batch = Number(this.getAttribute("batch")) || 200;
 		this.cards = this.load([...this.list.children]);
-		this.moreButton = this.more.querySelector("button");
+		// Swap the link to the next page for a button that shows more cards in place.
+		let moreLink = this.more.querySelector("a");
+		this.moreButton = document.createElement("button");
+		this.moreButton.type = "button";
+		this.moreButton.className = moreLink.className;
+		this.moreButton.disabled = true;
+		this.moreButton.textContent = moreLink.textContent;
+		moreLink.replaceWith(this.moreButton);
 		this.hiddenCount = this.more.querySelector("[data-hidden-count]");
 		this.moreButton.addEventListener("click", () => {
 			let first = this.list.children.length;

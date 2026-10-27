@@ -1,6 +1,16 @@
 ---
 layout: layouts/base.njk
+pagination:
+  data: collections.popularComponents
+  size: 200
+  alias: pageEntries
+permalink: "{% if pagination.pageNumber %}/page/{{ pagination.pageNumber + 1 }}/{% else %}/{% endif %}"
+eleventyComputed:
+  title: "{% if pagination.pageNumber %}Page {{ pagination.pageNumber + 1 }}{% endif %}"
 ---
+{#- Later pages are for browsers without JavaScript, so they skip the search controls. #}
+{%- set firstPage = not pagination.pageNumber %}
+{%- if firstPage %}
 <div class="home-title">
 <h1>Find a custom element</h1>
 <p class="bsky"><a href="https://bsky.app/starter-pack/zachleat.com/3lahui7zefw2s" class="bsky-callout"><i class="fa-brands fa-bluesky"></i>Follow authors on Bluesky</a></p>
@@ -87,15 +97,29 @@ layout: layouts/base.njk
 	</div>
 </component-search>
 
-{#- Only the first batch renders here; component-search loads the rest from /cards.html. #}
+{%- else %}
+<div class="home-title">
+<h1>Find a custom element</h1>
+</div>
+<p class="lede"><a href="/">Search all {{ collections.components.length }} components</a></p>
+{%- endif %}
+
+{#- Only one batch renders per page; component-search loads the rest from /cards.html. #}
 <ul class="component-list" id="components">
-	{%- for entry in (collections.components | byPopularity(downloads)).slice(0, cardBatch) %}
+	{%- for entry in pageEntries %}
 	{% include "component-card.njk" %}
 	{%- endfor %}
 </ul>
-{%- set hiddenCount = collections.components.length - cardBatch %}
-{#- Disabled until component-search loads the rest. #}
-<p class="show-more" id="show-more"{% if hiddenCount < 1 %} hidden{% endif %}><button type="button" class="search-reset" disabled>Show {{ cardBatch if hiddenCount > cardBatch else hiddenCount }} more components</button> <span data-hidden-count>{{ hiddenCount }} still hidden</span></p>
+{%- set shownCount = pagination.pageNumber * pagination.size + pageEntries.length %}
+{%- set hiddenCount = collections.components.length - shownCount %}
+{%- set nextCount = cardBatch if hiddenCount > cardBatch else hiddenCount %}
+{#- Links to the next page until component-search swaps in a button. #}
+<p class="show-more" id="show-more"{% if hiddenCount < 1 and firstPage %} hidden{% endif %}>
+	{%- if pagination.href.previous %}<a href="{{ pagination.href.previous }}" class="search-reset">Previous {{ pagination.size }} components</a> {% endif %}
+	{%- if pagination.href.next %}<a href="{{ pagination.href.next }}" class="search-reset">Show {{ nextCount }} more components</a> {% endif %}
+	<span data-hidden-count>{{ shownCount }} of {{ collections.components.length }} shown</span></p>
 
+{%- if firstPage %}
 <script type="module" src="/component-search.js"></script>
 <script type="module" src="/component-of-the-week.js"></script>
+{%- endif %}
