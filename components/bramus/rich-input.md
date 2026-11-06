@@ -8,6 +8,7 @@ package: rich-input
 author: Bramus
 repository: https://github.com/bramus/rich-input
 documentation: "https://github.com/bramus/rich-input#readme"
+demo: https://rich-input.netlify.app/
 license: MIT
 keywords: [rich-input, opaque-range, custom-highlight-api, autocomplete, keyword-search, search-input]
 authorUrl: https://www.bram.us/
